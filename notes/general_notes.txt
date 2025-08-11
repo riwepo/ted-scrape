@@ -1,0 +1,18 @@
+here is a url I used to test stuff
+
+https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript
+
+I was able to find the whole transcript in a script in the head of the document.
+However it contains no paragraph splits.
+
+Better strategy.
+It seems each paragraph contains a recognizable button, with 2 icons and a time on the label.
+If we find each button, then walk back up the parent tree until we get to a div that contains another button,
+we have gone too far.
+I will collect all of the markup for each paragraph.
+After that I can parse out the transcript paragraph.
+
+Steps - write code to recognize a button.
+Make sure it finds the correct number.
+Use each as a seed. Walk back up the tree collecting markup.
+Store paragraphs in an atom.
