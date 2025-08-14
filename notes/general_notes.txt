@@ -27,3 +27,6 @@ i used clojure.java.shell to run a node script
 
 I have it to stage of collecting all of the markup that contains a paragraph.
 On the test page there are 60 paragraphs.
+
+I have retrieved the first paragraph.
+Need to map that on to the whole page to get all paragraphs.
