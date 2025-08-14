@@ -1,0 +1,1045 @@
+    <body>
+      <link></link>
+      <div>
+        <div></div>
+        <div>
+          <header>
+            <div>
+              <div>
+                <div>
+                  <button>
+                    <i></i>
+                  </button>
+                  <div>
+                    <a>
+                      <svg>
+                        <path></path>
+                      </svg>
+                      <div>
+                        Ideas change everything
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <div>
+                      <nav>
+                        <ul>
+                          <li>
+                            <button>
+                              <div>
+                                WATCH
+                              </div>
+                            </button>
+                            <div>
+                              <div>
+                                <a>
+                                  <div>
+                                    TED Talks
+                                  </div>
+                                  <div>
+                                    Browse the library of TED talks and speakers
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Playlists
+                                  </div>
+                                  <div>
+                                    100+ collections of TED Talks, for curious minds
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TED Series
+                                  </div>
+                                  <div>
+                                    Go deeper into fascinating topics with original video series from TED
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TED-Ed videos
+                                  </div>
+                                  <div>
+                                    Watch, share and create lessons with TED-Ed
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TEDx Talks
+                                  </div>
+                                  <div>
+                                    Talks from independently organized local events
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button>
+                              <div>
+                                DISCOVER
+                              </div>
+                            </button>
+                            <div>
+                              <div>
+                                <a>
+                                  <div>
+                                    Topics
+                                  </div>
+                                  <div>
+                                    Explore TED offerings by topic
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Podcasts
+                                  </div>
+                                  <div>
+                                    Explore the TED Audio Collective
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Ideas Blog
+                                  </div>
+                                  <div>
+                                    Our daily coverage of the world of ideas
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Newsletters
+                                  </div>
+                                  <div>
+                                    Inspiration delivered straight to your inbox
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TED Games
+                                  </div>
+                                  <div>
+                                    Innovative games that challenge you to think differently
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button>
+                              <div>
+                                ATTEND
+                              </div>
+                            </button>
+                            <div>
+                              <div>
+                                <a>
+                                  <div>
+                                    Conferences
+                                  </div>
+                                  <div>
+                                    Take part in our events: TED, TEDGlobal and more
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TEDx Events
+                                  </div>
+                                  <div>
+                                    Find and attend local, independently organized events
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TED on Screen
+                                  </div>
+                                  <div>
+                                    Experience TED from home
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TED Courses
+                                  </div>
+                                  <div>
+                                    Learn from TED speakers who expand on their world-changing ideas
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button>
+                              <div>
+                                PARTICIPATE
+                              </div>
+                            </button>
+                            <div>
+                              <div>
+                                <a>
+                                  <div>
+                                    Nominate
+                                  </div>
+                                  <div>
+                                    Recommend speakers, TED Prize recipients, Fellows and more
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Organize a local TEDx Event
+                                  </div>
+                                  <div>
+                                    Rules and resources to help you plan a local TEDx event
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TED-Ed
+                                  </div>
+                                  <div>
+                                    Award-winning educational content and programs
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Translate
+                                  </div>
+                                  <div>
+                                    Bring TED to the non-English speaking world
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TED Fellows
+                                  </div>
+                                  <div>
+                                    Join or support innovators from around the globe
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <button>
+                              <div>
+                                ABOUT
+                              </div>
+                            </button>
+                            <div>
+                              <div>
+                                <a>
+                                  <div>
+                                    Our Organization
+                                  </div>
+                                  <div>
+                                    Our mission, history, team, and more
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Conferences
+                                  </div>
+                                  <div>
+                                    TED Conferences, past, present, and future
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Programs & Initiatives
+                                  </div>
+                                  <div>
+                                    Details about TED's world-changing initiatives
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    Partner with TED
+                                  </div>
+                                  <div>
+                                    Learn how you can partner with us
+                                  </div>
+                                </a>
+                                <a>
+                                  <div>
+                                    TED Blog
+                                  </div>
+                                  <div>
+                                    Updates from TED and highlights from our global community
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </nav>
+                      <div>
+                        <div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <form>
+                        <button>
+                          <i></i>
+                        </button>
+                        <div>
+                          <label>
+                            Type to search
+                          </label>
+                          <input></input>
+                          <button>
+                            <i></i>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <main>
+            <div>
+              <div></div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div></div>
+                              <media-controller>
+                                <div>
+                                  <media-play-button>
+                                    <span>
+                                      <div>
+                                        <div>
+                                          <div></div>
+                                          <svg>
+                                            <path></path>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </media-play-button>
+                                </div>
+                                <div>
+                                  <section>
+                                    <div>
+                                      <div>
+                                        <div>
+                                          <img></img>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </section>
+                                </div>
+
+
+                              </media-controller>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div></div>
+                          <div>
+                            <div>
+                              <div></div>
+                            </div>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+
+                          <div>
+                            <div></div>
+                            <div>
+                              <div></div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                            <div></div>
+                            <div>
+                              <div></div>
+                              <div></div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer>
+            <footer>
+              <div>
+                <div>
+                  <svg>
+                    <g>
+                      <path></path>
+                    </g>
+                    <defs>
+                      <clippath>
+                        <rect></rect>
+                      </clippath>
+                    </defs>
+                  </svg>
+                  <div>
+                    <div>
+                      <div>
+                        <nav>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    Explore
+                                  </div>
+                                  <ul>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TEDx
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Fellows
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Ed
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Translators
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Institute
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            The Audacious Project
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED@Work
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            Podcasts
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Blog
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            More ways to get TED
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    Our community
+                                  </div>
+                                  <ul>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Speakers
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Fellows
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Translators
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TEDx Organizers
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div>
+                                        <a>
+                                          <span>
+                                            TED Community
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </nav>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <div>
+                          Newsletters
+                        </div>
+                        <div>
+                          <svg>
+                            <g>
+                              <path></path>
+                              <path></path>
+                            </g>
+                            <defs>
+                              <clippath>
+                                <rect></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                          <div>
+                            Get the latest talks
+                          </div>
+                        </div>
+                        <div>
+                          Get a daily email featuring the latest talk, plus a quick mix of trending content.
+                        </div>
+                        <form>
+                          <div>
+                            <input></input>
+                            <input></input>
+                            <div>
+                              <input></input>
+                            </div>
+                            <div>
+                              <button>
+                                <p>
+                                  <span>
+                                    Subscribe
+                                  </span>
+                                </p>
+                              </button>
+                            </div>
+                          </div>
+                        </form>
+                        <div>
+                          By subscribing, you understand and agree that we will store, process and manage your personal information according to our
+
+                           
+                          <a>
+                            Privacy Policy
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div></div>
+                    </div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div></div>
+                          </div>
+                          <div>
+                            <div>
+                              <div>
+                                Follow TED
+                              </div>
+                              <div>
+                                <a>
+                                  <svg>
+                                    <g>
+                                      <path></path>
+                                    </g>
+                                    <defs>
+                                      <clippath>
+                                        <rect></rect>
+                                      </clippath>
+                                    </defs>
+                                  </svg>
+                                </a>
+                                <a>
+                                  <svg>
+                                    <g>
+                                      <path></path>
+                                    </g>
+                                    <defs>
+                                      <clippath>
+                                        <rect></rect>
+                                      </clippath>
+                                    </defs>
+                                  </svg>
+                                </a>
+                                <a>
+                                  <svg>
+                                    <g>
+                                      <path></path>
+                                      <path></path>
+                                      <path></path>
+                                    </g>
+                                    <defs>
+                                      <clippath>
+                                        <rect></rect>
+                                      </clippath>
+                                    </defs>
+                                  </svg>
+                                </a>
+                                <a>
+                                  <svg>
+                                    <g>
+                                      <path></path>
+                                      <path></path>
+                                    </g>
+                                    <defs>
+                                      <clippath>
+                                        <rect></rect>
+                                      </clippath>
+                                    </defs>
+                                  </svg>
+                                </a>
+                                <a>
+                                  <svg>
+                                    <g>
+                                      <path></path>
+                                    </g>
+                                    <defs>
+                                      <clippath>
+                                        <rect></rect>
+                                      </clippath>
+                                    </defs>
+                                  </svg>
+                                </a>
+                              </div>
+                              <div>
+                                <div>
+                                  <div>
+                                    Download the TED App
+                                  </div>
+                                  <div>
+                                    <a>
+                                      <svg>
+                                        <g>
+                                          <path></path>
+                                          <path></path>
+                                          <g>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                          </g>
+                                          <path></path>
+                                          <path></path>
+                                          <path></path>
+                                          <path></path>
+                                          <path></path>
+                                          <path></path>
+                                          <path></path>
+                                          <path></path>
+                                        </g>
+                                        <defs>
+                                          <clippath>
+                                            <rect></rect>
+                                          </clippath>
+                                          <clippath>
+                                            <rect></rect>
+                                          </clippath>
+                                        </defs>
+                                      </svg>
+                                    </a>
+                                    <a>
+                                      <svg>
+                                        <title>
+                                          Download_on_the_App_Store_Badge_US-UK_RGB_blk_4SVG_092917
+                                        </title>
+                                        <g>
+                                          <g>
+                                            <g>
+                                              <path></path>
+                                              <path></path>
+                                            </g>
+                                            <g>
+                                              <g>
+                                                <g>
+                                                  <path></path>
+                                                  <path></path>
+                                                </g>
+                                              </g>
+                                              <g>
+                                                <path></path>
+                                                <path></path>
+                                                <path></path>
+                                                <path></path>
+                                                <path></path>
+                                                <path></path>
+                                                <path></path>
+                                                <path></path>
+                                              </g>
+                                            </g>
+                                          </g>
+                                          <g>
+                                            <g>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  Download the TED App
+                                </div>
+                                <div>
+                                  <a>
+                                    <svg>
+                                      <g>
+                                        <path></path>
+                                        <path></path>
+                                        <g>
+                                          <path></path>
+                                          <path></path>
+                                          <path></path>
+                                          <path></path>
+                                        </g>
+                                        <path></path>
+                                        <path></path>
+                                        <path></path>
+                                        <path></path>
+                                        <path></path>
+                                        <path></path>
+                                        <path></path>
+                                        <path></path>
+                                      </g>
+                                      <defs>
+                                        <clippath>
+                                          <rect></rect>
+                                        </clippath>
+                                        <clippath>
+                                          <rect></rect>
+                                        </clippath>
+                                      </defs>
+                                    </svg>
+                                  </a>
+                                  <a>
+                                    <svg>
+                                      <title>
+                                        Download_on_the_App_Store_Badge_US-UK_RGB_blk_4SVG_092917
+                                      </title>
+                                      <g>
+                                        <g>
+                                          <g>
+                                            <path></path>
+                                            <path></path>
+                                          </g>
+                                          <g>
+                                            <g>
+                                              <g>
+                                                <path></path>
+                                                <path></path>
+                                              </g>
+                                            </g>
+                                            <g>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                              <path></path>
+                                            </g>
+                                          </g>
+                                        </g>
+                                        <g>
+                                          <g>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                            <path></path>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <nav>
+                            <ul>
+                              <li>
+                                <div>
+                                  <a>
+                                    <span>
+                                      TED Talks Usage Policy
+                                    </span>
+                                  </a>
+                                </div>
+                              </li>
+                              <li>
+                                <div>
+                                  <a>
+                                    <span>
+                                      Privacy Policy
+                                    </span>
+                                  </a>
+                                </div>
+                              </li>
+                              <li>
+                                <div>
+                                  <a>
+                                    <span>
+                                      Advertising / Partnership
+                                    </span>
+                                  </a>
+                                </div>
+                              </li>
+                              <li>
+                                <div>
+                                  <a>
+                                    <span>
+                                      TED.com Terms of Use
+                                    </span>
+                                  </a>
+                                </div>
+                              </li>
+                              <li>
+                                <div>
+                                  <a>
+                                    <span>
+                                      Jobs
+                                    </span>
+                                  </a>
+                                </div>
+                              </li>
+                              <li>
+                                <div>
+                                  <a>
+                                    <span>
+                                      Press
+                                    </span>
+                                  </a>
+                                </div>
+                              </li>
+                              <li>
+                                <div>
+                                  <a>
+                                    <span>
+                                      Help
+                                    </span>
+                                  </a>
+                                </div>
+                              </li>
+                              <li>
+                                <div>
+                                  <button>
+                                    <span>
+                                      Privacy Preferences
+                                    </span>
+                                  </button>
+                                </div>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                      <div>
+                        <div></div>
+                      </div>
+                      <div>
+                        <div>
+                          <div></div>
+                          <div>
+                            © TED Conferences, LLC. All rights reserved.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </footer>
+        </div>
+        <section></section>
+      </div>
+      <script></script>
+      <script>
+        
+            window.addEventListener('load', () => {
+                // Get query parameters using URLSearchParams
+                const getQueryParams = () => {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const params = {};
+                    urlParams.forEach((value, key) => {
+                        params[key] = value;
+                    });
+                    return params;
+                };
+
+                const query = getQueryParams();
+                const hasUTM_ID = query.utm_id && query.utm_id.length > 0;
+                const language = navigator.language.slice(0, 2);
+
+                const config = {
+                    hostWebsiteType: "spa",
+                    customerId: 'a107d7f43ad64daa9a7ef2f8bfde9d97',
+                    isCustom: true,
+                    autoTrackPageview: false,
+                    useStoredTags: true
+                };
+
+                if (hasUTM_ID) {
+                    config.overlayKeyValue = {
+                        utm_id: query.utm_id,
+                        navigator_language: language
+                    };
+                } else {
+                  config.overlayKeyValue = {
+                    navigator_language: language
+                  };
+                }
+                Sailthru.init(config);
+            });
+        
+      </script>
+      <script>
+        {"props":{"pageProps":{"shortenedUrl":"https://go.ted.com/SjNyR","action":null,"videoData":{"__typename":"Video","playerData":"{\"id\":\"148366\",\"mediaIdentifier\":\"consus-pm10162-im9294\",\"mediaProjectVersionIdentifier\":\"consus-pm10162-im9294\",\"duration\":1534,\"languages\":[{\"languageName\":\"English\",\"endonym\":\"English\",\"languageCode\":\"en\",\"ianaCode\":\"en\",\"isRtl\":false},{\"languageName\":\"Arabic\",\"endonym\":\"العربية\",\"languageCode\":\"ar\",\"ianaCode\":\"ar\",\"isRtl\":true},{\"languageName\":\"Spanish\",\"endonym\":\"Español\",\"languageCode\":\"es\",\"ianaCode\":\"es\",\"isRtl\":false},{\"languageName\":\"French\",\"endonym\":\"Français\",\"languageCode\":\"fr\",\"ianaCode\":\"fr\",\"isRtl\":false},{\"languageName\":\"Korean\",\"endonym\":\"한국어\",\"languageCode\":\"ko\",\"ianaCode\":\"ko\",\"isRtl\":false}],\"nativeLanguage\":\"en\",\"isSubtitleRequired\":false,\"resources\":{\"h264\":[{\"bitrate\":1200,\"file\":\"https://py.tedcdn.com/consus/projects/00/78/30/001/products/2025-eric-schmidt-001-fallback-caac33da-efcd-493b-938e-9b79a5c4721c-1200k.mp4\"}],\"hls\":{\"adUrl\":\"https://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250%2C512x288%2C120x60%2C320x50%2C6x7%2C6x8\\u0026correlator=%5Bcorrelator%5D\\u0026cust_params=event%3DTED2025%26id%3D148366%26tag%3Dtechnology%2CAI%2Ccomputers%2Cmachine%2Blearning%2Cinnovation%2Cfuture%2Cdata%26talk%3Deric_schmidt_the_ai_revolution_is_underhyped%26year%3D2025\\u0026env=vp\\u0026gdfp_req=1\\u0026impl=s\\u0026iu=%2F5641%2Fmobile%2Fios%2Fweb\\u0026output=xml_vast2\\u0026sz=640x360\\u0026unviewed_position_start=1\\u0026url=%5Breferrer%5D\",\"maiTargeting\":{\"id\":\"148366\",\"talk\":\"eric_schmidt_the_ai_revolution_is_underhyped\",\"tag\":\"technology,AI,computers,machine learning,innovation,future,data\",\"year\":\"2025\",\"event\":\"TED2025\"},\"stream\":\"https://hls.ted.com/project_masters/10162/manifest.m3u8?intro_master_id=9294\",\"metadata\":\"https://hls.ted.com/project_masters/10162/metadata.json?intro_master_id=9294\"}},\"targeting\":{\"id\":\"148366\",\"talk\":\"eric_schmidt_the_ai_revolution_is_underhyped\",\"tag\":\"technology,AI,computers,machine learning,innovation,future,data\",\"year\":\"2025\",\"event\":\"TED2025\"},\"canonical\":\"https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped\",\"name\":\"Eric Schmidt: The AI revolution is underhyped\",\"title\":\"The AI revolution is underhyped\",\"speaker\":\"Eric Schmidt\",\"thumb\":\"https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148366/29154634-39fc-4807-90db-05e74cc312ff/EricSchmidt_2025-embed.jpg?quality=89\\u0026w=600\",\"slug\":\"eric_schmidt_the_ai_revolution_is_underhyped\",\"event\":\"TED2025\",\"published\":1747320746,\"external\":{\"service\":\"YouTube\",\"code\":\"id4YRO7G0wE\",\"duration\":1538.0,\"start_time\":0.0}}","takeaways":{"__typename":"TalkTakeawayConnection","nodes":[{"__typename":"TalkTakeaway","id":"28007","text":"AI's underhyped potential is transforming planning and strategy, leading to radical shifts in computation and human roles.","talkstarTalkId":148366,"offsetSeconds":133},{"__typename":"TalkTakeaway","id":"28008","text":"In 2016, AI invented a novel move in Go, signaling the onset of machines conceiving beyond human ingenuity and strategy.","talkstarTalkId":148366,"offsetSeconds":355},{"__typename":"TalkTakeaway","id":"28009","text":"Escalating AI compute demands forecast a staggering 90 gigawatts of additional power, spotlighting infrastructure challenges.","talkstarTalkId":148366,"offsetSeconds":233}]},"talkExtras":{"__typename":"TalkExtras","learnModules":[{"__typename":"LearnModule","author":"Henry A. Kissinger, Eric Schmidt, Craig Mundie","blurb":null,"eyebrow":"","headline":"*Genesis: Artificial Intelligence, Hope, and the Human Spirit*","imageUrl":"https://images.prismic.io/tedconf/aCUOLidWJ-7kSIOm_81fBsNwtY8L.jpg","linkUrl":"https://www.amazon.com/Genesis-Artificial-Intelligence-Human-Spirit/dp/0316581291/ref=as_li_tf_tl?ie=UTF8\u0026camp=1789\u0026creative=9325\u0026creativeASIN=0520271440\u0026linkCode=as2\u0026tag=teco06-20","published":true,"publisher":"Little, Brown and Company","status":"APPROVED","type":"BOOK","visibleUrl":null,"year":""}],"takeAction":[],"recommendations":[]},"relatedVideos":[{"__typename":"Video","slug":"bilawal_sidhu_the_ai_powered_tools_supercharging_your_imagination","id":"116411"},{"__typename":"Video","slug":"avni_patel_thompson_can_ai_help_with_the_chaos_of_family_life","id":"148334"},{"__typename":"Video","slug":"mustafa_suleyman_what_is_an_ai_anyway","id":"129248"},{"__typename":"Video","slug":"tom_gruber_how_ai_can_enhance_our_memory_work_and_social_lives","id":"2841"},{"__typename":"Video","slug":"max_tegmark_how_to_get_empowered_not_overpowered_by_ai","id":"17851"},{"__typename":"Video","slug":"kevin_kelly_how_ai_can_bring_on_a_second_industrial_revolution","id":"2645"}],"speakers":{"__typename":"AcmeSpeakerConnection","nodes":[{"__typename":"AcmeSpeaker","photoUrl":"https://ted-conferences-speaker-photos-production.s3.amazonaws.com/nn1qucekbd3qs5p94q16v3i17g5b","firstname":"Eric","middlename":"","lastname":"Schmidt","description":"Former CEO and chairman of Google","isLive":false,"title":"","whatOthersSay":"","whoTheyAre":"","whyListen":"\u003cdiv\u003eEric Schmidt is best known for his pivotal role in the growth and evolution of Google, where, as chairman and CEO, he oversaw the company's transformation from a small startup into one of the world's most influential companies from 2001 to 2011. He currently serves as executive chairman and CEO of Relativity Space and is the author of multiple bestselling books, the most recent being \u003ca href=\"https://geni.us/A6KAik\"\u003e\u003cem\u003eGenesis: Artificial Intelligence, Hope, and the Human Spirit\u003c/em\u003e\u003c/a\u003e, co-written with Henry Kissinger and Craig Mundie.\u003c/div\u003e","slug":"eric_schmidt"},{"__typename":"AcmeSpeaker","photoUrl":"https://ted-conferences-speaker-photos-production.s3.amazonaws.com/x4chj67irjapksj0ho81xwqr8bgs","firstname":"Bilawal","middlename":"","lastname":"Sidhu","description":"Creative technologist","isLive":true,"title":"","whatOthersSay":"","whoTheyAre":"","whyListen":"\u003cdiv\u003eHost of \u003cem\u003eThe TED AI Show\u003c/em\u003e podcast, Bilawal Sidhu is a multifaceted creator, engineer and product builder who blends reality and imagination using art, science and technology. Following a decade in the tech industry, including six years as a Google product manager focused on spatial computing and 3D maps, he now evangelizes for adoption of AI-assisted workflows (using “co-pilots”) in order to empower the next generation of artists and entrepreneurs.\u003c/div\u003e","slug":"bilawal_sidhu"}]},"type":{"__typename":"TypeOfVideo","id":"1","name":"TED Stage Talk"},"description":"The arrival of non-human intelligence is a very big deal, says former Google CEO and chairman Eric Schmidt. In a wide-ranging interview with technologist Bilawal Sidhu, Schmidt makes the case that AI is wildly underhyped, as near-constant breakthroughs give rise to systems capable of doing even the most complex tasks on their own. He explores the staggering opportunities, sobering challenges and urgent risks of AI, showing why everyone will need to engage with this technology in order to remain relevant.","socialTitle":"The AI revolution is underhyped","internalLanguageCode":"en","commentsEnabled":true,"commentsLoggedInOnly":true,"recordedOn":"2025-04-11","curatorApproved":true,"socialDescription":"The arrival of non-human intelligence is a very big deal, says former Google CEO and chairman Eric Schmidt. In a wide-ranging interview with technologist Bilawal Sidhu, Schmidt makes the case that AI is wildly underhyped, as near-constant breakthroughs give rise to systems capable of doing even the most complex tasks on their own. He explores the staggering opportunities, sobering challenges and urgent risks of AI, showing why everyone will need to engage with this technology in order to remain relevant.","partnerName":null,"videoContext":"TED2025","audioInternalLanguageCode":"en","language":"en","hasTranslations":true,"featured":true,"customContentDetails":{"__typename":"CustomContentDetails","partnerName":null},"topics":{"__typename":"TopicConnection","nodes":[{"__typename":"Topic","id":"10","name":"technology","slug":"technology"},{"__typename":"Topic","id":"36","name":"computers","slug":"computers"},{"__typename":"Topic","id":"53","name":"innovation","slug":"innovation"},{"__typename":"Topic","id":"80","name":"future","slug":"future"},{"__typename":"Topic","id":"184","name":"AI","slug":"ai"},{"__typename":"Topic","id":"294","name":"data","slug":"data"},{"__typename":"Topic","id":"478","name":"machine learning","slug":"machine+learning"}]},"presenterDisplayName":"Eric Schmidt","duration":1537,"canonicalUrl":"https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped","viewedCount":2242152,"tedcomPercentage":"0.03","youtubePercentage":"0.828","podcastsPercentage":"0.131","tedappsPercentage":"0.011","publishedAt":"2025-05-15T14:52:26Z","id":"148366","title":"The AI revolution is underhyped","slug":"eric_schmidt_the_ai_revolution_is_underhyped","primaryImageSet":[{"__typename":"PhotoSize","url":"https://talkstar-assets.s3.amazonaws.com/production/talks/talk_148366/29154634-39fc-4807-90db-05e74cc312ff/EricSchmidt_2025-embed.jpg","aspectRatioName":"16x9"},{"__typename":"PhotoSize","url":"https://talkstar-assets.s3.amazonaws.com/production/talks/talk_148366/28b7810e-4012-49c7-b1e9-4d2bc09bf02d/EricSchmidt_2025-stageshot.jpg","aspectRatioName":"4x3"},{"__typename":"PhotoSize","url":"https://talkstar-assets.s3.amazonaws.com/production/talks/talk_148366/93ff6e99-8d53-4485-8e04-12f50efd0fbd/EricSchmidt_2025-1350x675.jpg","aspectRatioName":"2x1"}]},"transcriptData":{"translation":{"__typename":"Translation","paragraphs":[{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Bilawal Sidhu: Eric Schmidt,\nthank you for joining us.","time":1098},{"__typename":"Cue","text":"Let's go back.","time":4334},{"__typename":"Cue","text":"You said the arrival of non-human\nintelligence is a very big deal.","time":6270},{"__typename":"Cue","text":"And this photo, taken in 2016,","time":10874},{"__typename":"Cue","text":"feels like one of those quiet moments\nwhere the Earth shifted beneath us,","time":13210},{"__typename":"Cue","text":"but not everyone noticed.","time":17314},{"__typename":"Cue","text":"What did you see back then\nthat the rest of us might have missed?","time":19283}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Eric Schmidt: In 2016,\nwe didn't understand","time":22386},{"__typename":"Cue","text":"what was now going to happen,","time":25188},{"__typename":"Cue","text":"but we understood that these algorithms\nwere new and powerful.","time":26823},{"__typename":"Cue","text":"What happened in this\nparticular set of games","time":30627},{"__typename":"Cue","text":"was in roughly the second game,","time":33330},{"__typename":"Cue","text":"there was a new move invented by AI","time":35265},{"__typename":"Cue","text":"in a game that had been\naround for 2,500 years","time":38068},{"__typename":"Cue","text":"that no one had ever seen.","time":41438}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Technically, the way this occurred","time":43507},{"__typename":"Cue","text":"was that the system of AlphaGo\nwas essentially organized","time":45175},{"__typename":"Cue","text":"to always maintain a greater\nthan 50 percent chance of winning.","time":48779},{"__typename":"Cue","text":"And so it calculated correctly this move,","time":52983},{"__typename":"Cue","text":"which was this great mystery\namong all of the Go players","time":55719},{"__typename":"Cue","text":"who are obviously insanely brilliant,","time":58488},{"__typename":"Cue","text":"mathematical and intuitive players.","time":60891},{"__typename":"Cue","text":"The question that Henry, Craig Mundie\nand I started to discuss, right,","time":63860},{"__typename":"Cue","text":"is what does this mean?","time":70334},{"__typename":"Cue","text":"How is it that our computers\ncould come up with something","time":74605},{"__typename":"Cue","text":"that humans had never thought about?","time":77307},{"__typename":"Cue","text":"I mean, this is a game\nplayed by billions of people.","time":79042},{"__typename":"Cue","text":"And that began the process\nthat led to two books.","time":82145},{"__typename":"Cue","text":"And I think, frankly,","time":86383},{"__typename":"Cue","text":"is the point at which\nthe revolution really started.","time":87584}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: If you fast forward to today,","time":91888},{"__typename":"Cue","text":"it seems that all anyone\ncan talk about is AI,","time":94057},{"__typename":"Cue","text":"especially here at TED.","time":98128},{"__typename":"Cue","text":"But you've taken a contrarian stance.","time":100097},{"__typename":"Cue","text":"You actually think AI is underhyped.","time":102799},{"__typename":"Cue","text":"Why is that?","time":105202}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: And I'll tell you why.","time":106470},{"__typename":"Cue","text":"Most of you think of AI as,","time":107738},{"__typename":"Cue","text":"I'll just use the general\nterm, as ChatGPT.","time":109072},{"__typename":"Cue","text":"For most of you, ChatGPT\nwas the moment where you said,","time":111108},{"__typename":"Cue","text":"\"Oh my God,","time":114311},{"__typename":"Cue","text":"this thing writes, and it makes mistakes,","time":115512},{"__typename":"Cue","text":"but it's so brilliantly verbal.\"","time":117547},{"__typename":"Cue","text":"That was certainly my reaction.","time":120417},{"__typename":"Cue","text":"Most people that I knew did that.","time":121918}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: It was visceral, yeah.","time":123520}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: This was two years ago.","time":124821},{"__typename":"Cue","text":"Since then, the gains in what is called\nreinforcement learning,","time":126590},{"__typename":"Cue","text":"which is what AlphaGo\nhelped invent and so forth,","time":130327},{"__typename":"Cue","text":"allow us to do planning.","time":133463},{"__typename":"Cue","text":"And a good example is look at OpenAI o3","time":135532},{"__typename":"Cue","text":"or DeepSeek R1,","time":140137},{"__typename":"Cue","text":"and you can see how it goes\nforward and back,","time":142005},{"__typename":"Cue","text":"forward and back, forward and back.","time":144808},{"__typename":"Cue","text":"It's extraordinary.","time":147110},{"__typename":"Cue","text":"In my case, I bought a rocket company","time":148645},{"__typename":"Cue","text":"because it was like, interesting.","time":151114}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: (Laughs) As one does.","time":153016}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: As one does.","time":154551},{"__typename":"Cue","text":"And it’s an area that\nI’m not an expert in,","time":155752},{"__typename":"Cue","text":"and I want to be an expert.","time":158522},{"__typename":"Cue","text":"So I'm using deep research.","time":159856},{"__typename":"Cue","text":"And these systems are spending 15 minutes\nwriting these deep papers.","time":161792},{"__typename":"Cue","text":"That's true for most of them.","time":166163},{"__typename":"Cue","text":"Do you have any idea how much computation","time":167698},{"__typename":"Cue","text":"15 minutes of these supercomputers is?","time":170133},{"__typename":"Cue","text":"It's extraordinary.","time":172703},{"__typename":"Cue","text":"So you’re seeing the arrival,","time":174337},{"__typename":"Cue","text":"the shift from language to language.","time":176039},{"__typename":"Cue","text":"Tthen you had language to sequence,","time":178308},{"__typename":"Cue","text":"which is how biology is done.","time":180010},{"__typename":"Cue","text":"Now you're doing essentially\nplanning and strategy.","time":181511},{"__typename":"Cue","text":"The eventual state of this","time":185549},{"__typename":"Cue","text":"is the computers running\nall business processes, right?","time":188385},{"__typename":"Cue","text":"So you have an agent to do this,\nan agent to do this,","time":191354},{"__typename":"Cue","text":"an agent to do this.","time":193857},{"__typename":"Cue","text":"And you concatenate them together,","time":195525},{"__typename":"Cue","text":"and they speak language among each other.","time":197260},{"__typename":"Cue","text":"They typically speak English language.","time":199863}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: I mean, speaking of just the sheer\ncompute requirements of these systems,","time":202799},{"__typename":"Cue","text":"let's talk about scale briefly.","time":207771},{"__typename":"Cue","text":"You know, I kind of think of these AI\nsystems as Hungry Hungry Hippos.","time":209773},{"__typename":"Cue","text":"They seemingly soak up all the data\nand compute that we throw at them. ","time":213143},{"__typename":"Cue","text":"They've already digested all the tokens\non the public internet,","time":216646},{"__typename":"Cue","text":"and it seems we can't build\ndata centers fast enough.","time":220150},{"__typename":"Cue","text":"What do you think the real limits are,","time":223720},{"__typename":"Cue","text":"and how do we get ahead of them","time":225756},{"__typename":"Cue","text":"before they start throttling AI progress?","time":227958}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: So there's a real limit in energy.","time":230627},{"__typename":"Cue","text":"Give you an example.","time":232496},{"__typename":"Cue","text":"There's one calculation,","time":233663},{"__typename":"Cue","text":"and I testified on this\nthis week in Congress,","time":234898},{"__typename":"Cue","text":"that we need another 90 gigawatts\nof power in America.","time":237701},{"__typename":"Cue","text":"My answer, by the way,\nis, think Canada, right?","time":243273},{"__typename":"Cue","text":"Nice people, full of hydroelectric power.","time":247144},{"__typename":"Cue","text":"But that's apparently not\nthe political mood right now.","time":249446},{"__typename":"Cue","text":"Sorry.","time":252616},{"__typename":"Cue","text":"So 90 gigawatts is 90 nuclear\npower plants in America.","time":253850},{"__typename":"Cue","text":"Not happening.","time":259422},{"__typename":"Cue","text":"We're building zero, right?","time":260590},{"__typename":"Cue","text":"How are we going to get all that power?","time":262192},{"__typename":"Cue","text":"This is a major, major national issue.","time":264094},{"__typename":"Cue","text":"You can use the Arab world,","time":266997},{"__typename":"Cue","text":"which is busy building five to 10\ngigawatts of data centers.","time":268331},{"__typename":"Cue","text":"India is considering\na 10-gigawatt data center.","time":272068},{"__typename":"Cue","text":"To understand how big gigawatts are,","time":275138},{"__typename":"Cue","text":"is think cities per data center.","time":277541},{"__typename":"Cue","text":"That's how much power these things need.","time":280544},{"__typename":"Cue","text":"And the people look at it and they say,","time":282846},{"__typename":"Cue","text":"“Well, there’s lots\nof algorithmic improvements,","time":285015},{"__typename":"Cue","text":"and you will need less power.\"","time":288218},{"__typename":"Cue","text":"There's an old rule, I'm old enough\nto remember, right?","time":289920},{"__typename":"Cue","text":"Grove giveth, Gates taketh away.","time":293824},{"__typename":"Cue","text":"OK, the hardware just\ngets faster and faster.","time":297060},{"__typename":"Cue","text":"The physicists are amazing.","time":300330},{"__typename":"Cue","text":"Just incredible what\nthey've been able to do.","time":302666},{"__typename":"Cue","text":"And us software people,\nwe just use it and use it and use it.","time":304968},{"__typename":"Cue","text":"And when you look at planning,\nat least in today's algorithms,","time":308738},{"__typename":"Cue","text":"it's back and forth and try this and that","time":312442},{"__typename":"Cue","text":"and just watch it yourself.","time":315011},{"__typename":"Cue","text":"There are estimates, and you know this\nfrom Andreessen Horowitz reports,","time":316780},{"__typename":"Cue","text":"it's been well studied,","time":321451},{"__typename":"Cue","text":"that there's an increase\nin at least a factor of 100,","time":323086},{"__typename":"Cue","text":"maybe a factor of 1,000,","time":326089},{"__typename":"Cue","text":"in computation required\njust to do the kind of planning.","time":327390},{"__typename":"Cue","text":"The technology goes from essentially\ndeep learning to reinforcement learning","time":331094},{"__typename":"Cue","text":"to something called test-time compute,","time":335365},{"__typename":"Cue","text":"where not only are you doing planning,","time":337334},{"__typename":"Cue","text":"but you're also learning\nwhile you're doing planning.","time":339169},{"__typename":"Cue","text":"That is the, if you will,","time":341705},{"__typename":"Cue","text":"the zenith or what have you,\nof computation needs.","time":342939},{"__typename":"Cue","text":"That's problem number one,\nelectricity and hardware.","time":346509}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Problem number two is we ran out of data","time":349746},{"__typename":"Cue","text":"so we have to start generating it.","time":353850},{"__typename":"Cue","text":"But we can easily do that\nbecause that's one of the functions.","time":355518}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"And then the third question\nthat I don't understand","time":358455},{"__typename":"Cue","text":"is what's the limit of knowledge?","time":361124},{"__typename":"Cue","text":"I'll give you an example.","time":363860},{"__typename":"Cue","text":"Let's imagine we are collectively\nall of the computers in the world,","time":365095},{"__typename":"Cue","text":"and we're all thinking","time":368465},{"__typename":"Cue","text":"and we're all thinking based on knowledge\nthat exists that was previously invented.","time":369933},{"__typename":"Cue","text":"How do we invent something completely new?","time":373937},{"__typename":"Cue","text":"So, Einstein.","time":378008},{"__typename":"Cue","text":"So when you study the way\nscientific discovery works,","time":379709},{"__typename":"Cue","text":"biology, math, so forth and so on,","time":382712},{"__typename":"Cue","text":"what typically happens is\na truly brilliant human being","time":385148},{"__typename":"Cue","text":"looks at one area and says,","time":388919},{"__typename":"Cue","text":"\"I see a pattern","time":391955},{"__typename":"Cue","text":"that's in a completely different area,","time":393556},{"__typename":"Cue","text":"has nothing to do with the first one.","time":395392},{"__typename":"Cue","text":"It's the same pattern.\"","time":397227},{"__typename":"Cue","text":"And they take the tools from one\nand they apply it to another.","time":398528}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Today, our systems cannot do that.","time":402265},{"__typename":"Cue","text":"If we can get through that,\nI'm working on this,","time":404901},{"__typename":"Cue","text":"a general technical term for this\nis non-stationarity of objectives.","time":407804},{"__typename":"Cue","text":"The rules keep changing.","time":412609},{"__typename":"Cue","text":"We will see if we can solve that problem.","time":415345},{"__typename":"Cue","text":"If we can solve that, we're going to need\neven more data centers.","time":417347},{"__typename":"Cue","text":"And we'll also be able to invent\ncompletely new schools of scientific","time":420483},{"__typename":"Cue","text":"and intellectual thought,","time":425021},{"__typename":"Cue","text":"which will be incredible.","time":426556}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: So as we push towards a zenith,","time":428325},{"__typename":"Cue","text":"autonomy has been\na big topic of discussion.","time":430126},{"__typename":"Cue","text":"Yoshua Bengio gave a compelling\ntalk earlier this week,","time":432929},{"__typename":"Cue","text":"advocating that AI labs should halt\nthe development of agentic AI systems","time":435865},{"__typename":"Cue","text":"that are capable\nof taking autonomous action.","time":439970},{"__typename":"Cue","text":"Yet that is precisely what the next\nfrontier is for all these AI labs,","time":442439},{"__typename":"Cue","text":"and seemingly for yourself, too.","time":446609},{"__typename":"Cue","text":"What is the right decision here?","time":448778}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: So Yoshua is a brilliant inventor\nof much of what we're talking about","time":450480},{"__typename":"Cue","text":"and a good personal friend.","time":454851},{"__typename":"Cue","text":"And we’ve talked about this,\nand his concerns are very legitimate.","time":456152},{"__typename":"Cue","text":"The question is not\nare his concerns right,","time":460156},{"__typename":"Cue","text":"but what are the solutions?","time":462192},{"__typename":"Cue","text":"So let's think about agents.","time":463593},{"__typename":"Cue","text":"So for purposes of argument,\neveryone in the audience is an agent.","time":466062},{"__typename":"Cue","text":"You have an input that's English\nor whatever language.","time":469666},{"__typename":"Cue","text":"And you have an output that’s English,\nand you have memory,","time":473303},{"__typename":"Cue","text":"which is true of all humans.","time":476072},{"__typename":"Cue","text":"Now we're all busy working,","time":477540},{"__typename":"Cue","text":"and all of a sudden, one of you decides","time":479376},{"__typename":"Cue","text":"it's much more efficient\nnot to use human language,","time":483279},{"__typename":"Cue","text":"but we'll invent\nour own computer language.","time":486049},{"__typename":"Cue","text":"Now you and I are sitting here,\nwatching all of this,","time":488318},{"__typename":"Cue","text":"and we're saying, like, what do we do now?","time":490887},{"__typename":"Cue","text":"The correct answer is unplug you, right?","time":493156},{"__typename":"Cue","text":"Because we're not going to know,","time":496493},{"__typename":"Cue","text":"we're just not going to know\nwhat you're up to.","time":499129},{"__typename":"Cue","text":"And you might actually be doing\nsomething really bad or really amazing.","time":501531},{"__typename":"Cue","text":"We want to be able to watch.","time":505001},{"__typename":"Cue","text":"So we need provenance,\nsomething you and I have talked about,","time":506903},{"__typename":"Cue","text":"but we also need to be able to observe it.","time":510240},{"__typename":"Cue","text":"To me, that's a core requirement.","time":512409},{"__typename":"Cue","text":"There's a set of criteria\nthat the industry believes are points","time":515545}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"where you want to,\nmetaphorically, unplug it.","time":518581},{"__typename":"Cue","text":"One is where you get\nrecursive self-improvement,","time":521051},{"__typename":"Cue","text":"which you can't control.","time":523553},{"__typename":"Cue","text":"Recursive self-improvement\nis where the computer is off learning,","time":524788},{"__typename":"Cue","text":"and you don't know what it's learning.","time":527857},{"__typename":"Cue","text":"That can obviously lead to bad outcomes.","time":529726},{"__typename":"Cue","text":"Another one would be direct\naccess to weapons.","time":531694},{"__typename":"Cue","text":"Another one would be that the computer\nsystems decide to exfiltrate themselves,","time":533963},{"__typename":"Cue","text":"to reproduce themselves\nwithout our permission.","time":538034},{"__typename":"Cue","text":"So there's a set of such things.","time":541171}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"The problem with Yoshua's speech,\nwith respect to such a brilliant person,","time":543239},{"__typename":"Cue","text":"is stopping things in a globally\ncompetitive market","time":548211},{"__typename":"Cue","text":"doesn't really work.","time":551915},{"__typename":"Cue","text":"Instead of stopping agentic work,","time":553950},{"__typename":"Cue","text":"we need to find a way\nto establish the guardrails,","time":557120},{"__typename":"Cue","text":"which I know you agree with\nbecause we’ve talked about it.","time":559823}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"(Applause)","time":562559}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: I think that brings us nicely\nto the dilemmas.","time":566596},{"__typename":"Cue","text":"And let's just say there are a lot of them\nwhen it comes to this technology.","time":568965},{"__typename":"Cue","text":"The first one I'd love\nto start with, Eric,","time":572669},{"__typename":"Cue","text":"is the exceedingly dual-use nature\nof this tech, right?","time":574704},{"__typename":"Cue","text":"It's applicable to both civilian\nand military applications.","time":577474},{"__typename":"Cue","text":"So how do you broadly think\nabout the dilemmas","time":581244},{"__typename":"Cue","text":"and ethical quandaries","time":583513},{"__typename":"Cue","text":"that come with this tech\nand how humans deploy them?","time":585081}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: In many cases,\nwe already have doctrines","time":589652},{"__typename":"Cue","text":"about personal responsibility.","time":592155},{"__typename":"Cue","text":"A simple example, I did\na lot of military work","time":594090},{"__typename":"Cue","text":"and continue to do so.","time":596259},{"__typename":"Cue","text":"The US military has a rule called 3000.09,","time":597827},{"__typename":"Cue","text":"generally known as \"human in the loop\"\nor \"meaningful human control.\"","time":601531},{"__typename":"Cue","text":"You don't want systems\nthat are not under our control.","time":606236},{"__typename":"Cue","text":"It's a line we can't cross.","time":610173},{"__typename":"Cue","text":"I think that's correct.","time":612308},{"__typename":"Cue","text":"I think that the competition\nbetween the West,","time":613810},{"__typename":"Cue","text":"and particularly the United States,","time":617247},{"__typename":"Cue","text":"and China,","time":618982},{"__typename":"Cue","text":"is going to be defining in this area.","time":620183},{"__typename":"Cue","text":"And I'll give you some examples.","time":622719}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"First, the current government\nhas now put in","time":624320},{"__typename":"Cue","text":"essentially reciprocating\n145-percent tariffs.","time":627490},{"__typename":"Cue","text":"That has huge implications\nfor the supply chain.","time":631161},{"__typename":"Cue","text":"We in our industry depend on packaging","time":634063},{"__typename":"Cue","text":"and components from China\nthat are boring, if you will,","time":637834},{"__typename":"Cue","text":"but incredibly important.","time":641371},{"__typename":"Cue","text":"The little packaging and the little\nglue things and so forth","time":642639},{"__typename":"Cue","text":"that are part of the computers.","time":645475},{"__typename":"Cue","text":"If China were to deny access to them,\nthat would be a big deal.","time":647010},{"__typename":"Cue","text":"We are trying to deny them access\nto the most advanced chips,","time":650947},{"__typename":"Cue","text":"which they are super annoyed about.","time":654584},{"__typename":"Cue","text":"Dr. Kissinger asked Craig and I","time":657287},{"__typename":"Cue","text":"to do Track II dialogues\nwith the Chinese,","time":659689},{"__typename":"Cue","text":"and we’re in conversations with them.","time":662892},{"__typename":"Cue","text":"What's the number one issue they raise?","time":664694},{"__typename":"Cue","text":"This issue.","time":666596},{"__typename":"Cue","text":"Indeed, if you look at DeepSeek,\nwhich is really impressive,","time":667764},{"__typename":"Cue","text":"they managed to find algorithms\nthat got around the problems","time":670667},{"__typename":"Cue","text":"by making them more efficient.","time":673903},{"__typename":"Cue","text":"Because China is doing everything\nopen source, open weights,","time":675638},{"__typename":"Cue","text":"we immediately got the benefit\nof their invention","time":678975},{"__typename":"Cue","text":"and have adopted into US things.","time":681311}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"So we're in a situation now\nwhich I think is quite tenuous,","time":683446},{"__typename":"Cue","text":"where the US is largely driving,\nfor many, many good reasons,","time":687317},{"__typename":"Cue","text":"largely closed models,\nlargely under very good control.","time":690653},{"__typename":"Cue","text":"China is likely to be the leader\nin open source unless something changes.","time":694324},{"__typename":"Cue","text":"And open source leads to very\nrapid proliferation around the world.","time":698194},{"__typename":"Cue","text":"This proliferation is dangerous\nat the cyber level and the bio level.","time":702065},{"__typename":"Cue","text":"But let me give you why it's also\ndangerous in a more significant way,","time":706903},{"__typename":"Cue","text":"in a nuclear-threat way.","time":710840}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Dr. Kissinger, who we all\nworked with very closely,","time":712842},{"__typename":"Cue","text":"was one of the architects\nof mutually assured destruction,","time":715378},{"__typename":"Cue","text":"deterrence and so forth.","time":718147},{"__typename":"Cue","text":"And what's happening now\nis you've got a situation","time":719482},{"__typename":"Cue","text":"where -- I'll use an example.","time":723052},{"__typename":"Cue","text":"It's easier if I explain.","time":724487},{"__typename":"Cue","text":"You’re the good guy,\nand I’m the bad guy, OK?","time":725722},{"__typename":"Cue","text":"You're six months ahead of me,","time":728324},{"__typename":"Cue","text":"and we're both on the same path\nfor superintelligence.","time":730126},{"__typename":"Cue","text":"And you're going to get there, right?","time":733630},{"__typename":"Cue","text":"And I'm sure you're going\nto get there, you're that close.","time":735932},{"__typename":"Cue","text":"And I'm six months behind.","time":739802},{"__typename":"Cue","text":"Pretty good, right?","time":741604},{"__typename":"Cue","text":"Sounds pretty good.","time":743439},{"__typename":"Cue","text":"No.","time":745675},{"__typename":"Cue","text":"These are network-effect businesses.","time":746876},{"__typename":"Cue","text":"And in network-effect businesses,","time":748845},{"__typename":"Cue","text":"it is the slope of your improvement\nthat determines everything.","time":750747},{"__typename":"Cue","text":"So I'll use OpenAI or Gemini,","time":754584},{"__typename":"Cue","text":"they have 1,000 programmers.","time":756986},{"__typename":"Cue","text":"They're in the process of creating\na million AI software programmers.","time":758655},{"__typename":"Cue","text":"What does that do?","time":762992},{"__typename":"Cue","text":"First, you don't have to feed them\nexcept electricity.","time":764227},{"__typename":"Cue","text":"So that's good.","time":766863},{"__typename":"Cue","text":"And they don't quit and things like that.","time":768031},{"__typename":"Cue","text":"Second, the slope is like this.","time":770199},{"__typename":"Cue","text":"Well, as we get closer\nto superintelligence,","time":772535},{"__typename":"Cue","text":"the slope goes like this.","time":775471},{"__typename":"Cue","text":"If you get there first,\nyou dastardly person --","time":777006}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: You're never going\nto be able to catch me.","time":780643}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: I will not be able to catch you.","time":782812},{"__typename":"Cue","text":"And I've given you the tools","time":784580},{"__typename":"Cue","text":"to reinvent the world\nand in particular, destroy me.","time":785982},{"__typename":"Cue","text":"That's how my brain,\nMr. Evil, is going to think.","time":789452},{"__typename":"Cue","text":"So what am I going to do?","time":792488},{"__typename":"Cue","text":"The first thing I'm going to do\nis try to steal all your code.","time":794557},{"__typename":"Cue","text":"And you've prevented that\nbecause you're good.","time":797627},{"__typename":"Cue","text":"And you were good.","time":799829},{"__typename":"Cue","text":"So you’re still good, at Google.","time":800997},{"__typename":"Cue","text":"Second, then I'm going\nto infiltrate you with humans.","time":802999},{"__typename":"Cue","text":"Well, you've got\ngood protections against that.","time":806135},{"__typename":"Cue","text":"You know, we don't have spies.","time":808371},{"__typename":"Cue","text":"So what do I do?","time":809872},{"__typename":"Cue","text":"I’m going to go in,\nand I’m going to change your model. ","time":812241},{"__typename":"Cue","text":"I'm going to modify it.","time":814877},{"__typename":"Cue","text":"I'm going to actually screw you up","time":816045},{"__typename":"Cue","text":"to get me so I'm one day ahead of you.","time":817680},{"__typename":"Cue","text":"And you're so good, I can't do that.","time":820116},{"__typename":"Cue","text":"What's my next choice?","time":821918},{"__typename":"Cue","text":"Bomb your data center.","time":824187},{"__typename":"Cue","text":"Now do you think I’m insane?","time":826522},{"__typename":"Cue","text":"These conversations are occurring","time":830226},{"__typename":"Cue","text":"around nuclear opponents\ntoday in our world.","time":832428},{"__typename":"Cue","text":"There are legitimate people saying","time":836599},{"__typename":"Cue","text":"the only solution\nto this problem is preemption.","time":838534},{"__typename":"Cue","text":"Now I just told you that you, Mr. Good,","time":842372},{"__typename":"Cue","text":"are about to have the keys\nto control the entire world,","time":845475},{"__typename":"Cue","text":"both in terms of economic dominance,","time":849879},{"__typename":"Cue","text":"innovation, surveillance,","time":851781},{"__typename":"Cue","text":"whatever it is that you care about.","time":853449},{"__typename":"Cue","text":"I have to prevent that.","time":855284},{"__typename":"Cue","text":"We don't have any language in our society,","time":857387},{"__typename":"Cue","text":"the foreign policy people have not\nthought about this,","time":860823},{"__typename":"Cue","text":"and this is coming.","time":863526},{"__typename":"Cue","text":"When is it coming?","time":864727},{"__typename":"Cue","text":"Probably five years.","time":866129},{"__typename":"Cue","text":"We have time.","time":867997},{"__typename":"Cue","text":"We have time for this conversation.","time":869165},{"__typename":"Cue","text":"And this is really important.","time":870867}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: Let me push on this a little bit.","time":872568},{"__typename":"Cue","text":"So if this is true","time":874370},{"__typename":"Cue","text":"and we can end up in this\nsort of standoff scenario","time":875538},{"__typename":"Cue","text":"and the equivalent\nof mutually-assured destruction,","time":877974},{"__typename":"Cue","text":"you've also said that the US\nshould embrace open-source AI","time":880410},{"__typename":"Cue","text":"even after China's DeepSeek\nshowed what's possible","time":884046},{"__typename":"Cue","text":"with a fraction of the compute.","time":886416},{"__typename":"Cue","text":"But doesn't open-sourcing these models,","time":887917},{"__typename":"Cue","text":"just hand capabilities to adversaries\nthat will accelerate their own timelines?","time":889852}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: This is one of the wickedest,\nor, we call them wicked hard problems.","time":894023},{"__typename":"Cue","text":"Our industry, our science,","time":898628},{"__typename":"Cue","text":"everything about the world\nthat we have built","time":900596},{"__typename":"Cue","text":"is based on academic research,\nopen source, so forth.","time":903266},{"__typename":"Cue","text":"Much of Google's technology\nwas based on open source.","time":906636},{"__typename":"Cue","text":"Some of Google's technology\nis open-source,","time":909338},{"__typename":"Cue","text":"some of it is proprietary,\nperfectly legitimate.","time":911407},{"__typename":"Cue","text":"What happens when there's\nan open-source model","time":914644},{"__typename":"Cue","text":"that is really dangerous,","time":918014},{"__typename":"Cue","text":"and it gets into the hands\nof the Osama bin Ladens of the world,","time":919782},{"__typename":"Cue","text":"and we know there are more\nthan one, unfortunately.","time":923352},{"__typename":"Cue","text":"We don't know.","time":926589},{"__typename":"Cue","text":"The consensus in the industry right now","time":927790},{"__typename":"Cue","text":"is the open-source models\nare not quite at the point","time":929992},{"__typename":"Cue","text":"of national or global danger.","time":934730},{"__typename":"Cue","text":"But you can see a pattern\nwhere they might get there.","time":937633},{"__typename":"Cue","text":"So a lot will now depend upon the key\ndecisions made in the US and China","time":940903},{"__typename":"Cue","text":"and in the companies in both places.","time":945141},{"__typename":"Cue","text":"The reason I focus on US and China","time":947577},{"__typename":"Cue","text":"is they're the only two countries\nwhere people are crazy enough","time":949612},{"__typename":"Cue","text":"to spend the billions\nand billions of dollars","time":953182},{"__typename":"Cue","text":"that are required\nto build this new vision.","time":956085},{"__typename":"Cue","text":"Europe, which would love to do it,","time":958120},{"__typename":"Cue","text":"doesn't have the capital\nstructure to do it.","time":959789},{"__typename":"Cue","text":"Most of the other countries,\nnot even India,","time":961924},{"__typename":"Cue","text":"has the capital structure to do it,\nalthough they wish to.","time":963993},{"__typename":"Cue","text":"Arabs don't have\nthe capital structure to do it,","time":966762},{"__typename":"Cue","text":"although they're working on it.","time":969065},{"__typename":"Cue","text":"So this fight, this battle,\nwill be the defining battle.","time":970600}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"I'm worried about this fight.","time":974537},{"__typename":"Cue","text":"Dr. Kissinger talked about the likely\npath to war with China","time":976105},{"__typename":"Cue","text":"was by accident.","time":981110},{"__typename":"Cue","text":"And he was a student of World War I.","time":984380},{"__typename":"Cue","text":"And of course, [it]\nstarted with a small event,","time":986349},{"__typename":"Cue","text":"and it escalated over that summer\nin, I think, 1914.","time":988618},{"__typename":"Cue","text":"And then it was this\nhorrific conflagration.","time":992455},{"__typename":"Cue","text":"You can imagine a series of steps","time":995892},{"__typename":"Cue","text":"along the lines of what I'm talking about","time":997927},{"__typename":"Cue","text":"that could lead us\nto a horrific global outcome.","time":1000162},{"__typename":"Cue","text":"That's why we have to be paying attention.","time":1003966}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: I want to talk about one\nof the recurring tensions here,","time":1006202},{"__typename":"Cue","text":"before we move on to the dreams,","time":1009038},{"__typename":"Cue","text":"is, to sort of moderate\nthese AI systems at scale, right,","time":1011073},{"__typename":"Cue","text":"there's this weird tension in AI safety","time":1014310},{"__typename":"Cue","text":"that the solution to preventing \"1984\"","time":1016445},{"__typename":"Cue","text":"often sounds a lot like \"1984.\"","time":1019582},{"__typename":"Cue","text":"So proof of personhood is a hot topic.","time":1022518},{"__typename":"Cue","text":"Moderating these systems\nat scale is a hot topic.","time":1024353},{"__typename":"Cue","text":"How do you view that trade-off?","time":1026889},{"__typename":"Cue","text":"In trying to prevent dystopia,","time":1028391},{"__typename":"Cue","text":"let's say preventing non-state actors","time":1030159},{"__typename":"Cue","text":"from using these models\nin undesirable ways,","time":1032094},{"__typename":"Cue","text":"we might accidentally end up building\nthe ultimate surveillance state.","time":1034797}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: It's really important\nthat we stick to the values","time":1039635},{"__typename":"Cue","text":"that we have in our society.","time":1043372},{"__typename":"Cue","text":"I am very, very committed\nto individual freedom.","time":1045541},{"__typename":"Cue","text":"It's very easy for a well-intentioned\nengineer to build a system","time":1048377},{"__typename":"Cue","text":"which is optimized\nand restricts your freedom.","time":1052548},{"__typename":"Cue","text":"So it's very important that human\nfreedom be preserved in this.","time":1056352},{"__typename":"Cue","text":"A lot of these are not technical issues.","time":1060990},{"__typename":"Cue","text":"They're really business decisions.","time":1062959},{"__typename":"Cue","text":"It's certainly possible\nto build a surveillance state,","time":1064594},{"__typename":"Cue","text":"but it's also possible\nto build one that's freeing.","time":1067196},{"__typename":"Cue","text":"The conundrum that you're describing","time":1069632},{"__typename":"Cue","text":"is because it's now so easy to operate\nbased on misinformation,","time":1071400},{"__typename":"Cue","text":"everyone knows what I'm talking about,","time":1074904},{"__typename":"Cue","text":"that you really do need proof of identity.","time":1076772},{"__typename":"Cue","text":"But proof of identity\ndoes not have to include details.","time":1079175},{"__typename":"Cue","text":"So, for example, you could have\na cryptographic proof","time":1082111},{"__typename":"Cue","text":"that you are a human being,","time":1084614},{"__typename":"Cue","text":"and it could actually be true\nwithout anything else,","time":1085948},{"__typename":"Cue","text":"and also not be able to link it to others","time":1088417},{"__typename":"Cue","text":"using various cryptographic techniques.","time":1091220}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: So zero-knowledge proofs\nand other techniques.","time":1093856}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: Zero-knowledge proofs\nare the most obvious one.","time":1096258}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: Alright, let's change gears,\nshall we, to dreams.","time":1098661},{"__typename":"Cue","text":"In your book, \"Genesis,\"\nyou strike a cautiously optimistic tone,","time":1102264},{"__typename":"Cue","text":"which you obviously co-authored\nwith Henry Kissinger.","time":1105935},{"__typename":"Cue","text":"When you look ahead to the future,\nwhat should we all be excited about?","time":1108504}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: Well, I'm of the age","time":1112241},{"__typename":"Cue","text":"where some of my friends\nare getting really dread diseases.","time":1113709},{"__typename":"Cue","text":"Can we fix that now?","time":1117813},{"__typename":"Cue","text":"Can we just eliminate all of those?","time":1120016},{"__typename":"Cue","text":"Why can't we just uptake these","time":1122218},{"__typename":"Cue","text":"and right now, eradicate\nall of these diseases?","time":1123853},{"__typename":"Cue","text":"That's a pretty good goal.","time":1128457},{"__typename":"Cue","text":"I'm aware of one nonprofit\nthat's trying to identify,","time":1131027},{"__typename":"Cue","text":"in the next two years,","time":1134263},{"__typename":"Cue","text":"all human druggable targets\nand release it to the scientists.","time":1135598},{"__typename":"Cue","text":"If you know the druggable targets,","time":1139435},{"__typename":"Cue","text":"then the drug industry\ncan begin to work on things.","time":1141170}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"I have another company I'm associated with","time":1144340},{"__typename":"Cue","text":"which has figured out a way,\nallegedly, it's a startup,","time":1146375},{"__typename":"Cue","text":"to reduce the cost of stage-3 trials\nby an order of magnitude.","time":1149011},{"__typename":"Cue","text":"As you know, those are the things","time":1153015},{"__typename":"Cue","text":"that ultimately drive\nthe cost structure of drugs.","time":1154650},{"__typename":"Cue","text":"That's an example.","time":1157053}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"I'd like to know where dark energy is,","time":1158254},{"__typename":"Cue","text":"and I'd like to find it.","time":1161323},{"__typename":"Cue","text":"I'm sure that there is an enormous amount\nof physics in dark energy, dark matter.","time":1163492},{"__typename":"Cue","text":"Think about the revolution\nin material science.","time":1168931},{"__typename":"Cue","text":"Infinitely more powerful transportation,","time":1172201},{"__typename":"Cue","text":"infinitely more powerful\nscience and so forth.","time":1175104}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"I'll give you another example.","time":1178674},{"__typename":"Cue","text":"Why do we not have\nevery human being on the planet","time":1180109},{"__typename":"Cue","text":"have their own tutor in their own language","time":1186082},{"__typename":"Cue","text":"to help them learn something new?","time":1189685},{"__typename":"Cue","text":"Starting with kindergarten.","time":1191520},{"__typename":"Cue","text":"It's obvious.","time":1193456},{"__typename":"Cue","text":"Why have we not built it?","time":1194890},{"__typename":"Cue","text":"The answer, the only possible answer","time":1196158},{"__typename":"Cue","text":"is there must not be\na good economic argument.","time":1197893},{"__typename":"Cue","text":"The technology works.","time":1200162},{"__typename":"Cue","text":"Teach them in their language,\ngamify the learning,","time":1201797},{"__typename":"Cue","text":"bring people to their\nbest natural lengths.","time":1204900}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Another example.","time":1207103},{"__typename":"Cue","text":"The vast majority\nof health care in the world","time":1208270},{"__typename":"Cue","text":"is either absent","time":1210372},{"__typename":"Cue","text":"or delivered by the equivalent\nof nurse practitioners","time":1211540},{"__typename":"Cue","text":"and very, very sort of stressed\nlocal village doctors.","time":1214110},{"__typename":"Cue","text":"Why do they not have the doctor assistant\nthat helps them in their language,","time":1217413},{"__typename":"Cue","text":"treat whatever with,\nagain, perfect healthcare?","time":1221951},{"__typename":"Cue","text":"I can just go on.","time":1224320}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"There are lots and lots of issues\nwith the digital world.","time":1226021},{"__typename":"Cue","text":"It feels like that we're all\nin our own ships in the ocean,","time":1231694},{"__typename":"Cue","text":"and we're not talking to each other.","time":1235498},{"__typename":"Cue","text":"In our hunger for connectivity\nand connection,","time":1237299},{"__typename":"Cue","text":"these tools make us lonelier.","time":1240903},{"__typename":"Cue","text":"We've got to fix that, right?","time":1243606},{"__typename":"Cue","text":"But these are fixable problems.","time":1245207},{"__typename":"Cue","text":"They don't require new physics.","time":1246809},{"__typename":"Cue","text":"They don't require new discoveries,\nwe just have to decide.","time":1248744}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"So when I look at this future,","time":1251714},{"__typename":"Cue","text":"I want to be clear that the arrival\nof this intelligence,","time":1253182},{"__typename":"Cue","text":"both at the AI level, the AGI,","time":1257720},{"__typename":"Cue","text":"which is general intelligence,","time":1260356},{"__typename":"Cue","text":"and then superintelligence,","time":1261824},{"__typename":"Cue","text":"is the most important thing\nthat's going to happen in about 500 years,","time":1263526},{"__typename":"Cue","text":"maybe 1,000 years in human society.","time":1268297},{"__typename":"Cue","text":"And it's happening in our lifetime.","time":1270432},{"__typename":"Cue","text":"So don't screw it up.","time":1272368}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: Let's say we don't.","time":1275137}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"(Applause)","time":1277173}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Let's say we don't screw it up.","time":1280309},{"__typename":"Cue","text":"Let's say we get into this world\nof radical abundance.","time":1281844},{"__typename":"Cue","text":"Let's say we end up in this place,","time":1284747},{"__typename":"Cue","text":"and we hit that point\nof recursive self-improvement.","time":1286415},{"__typename":"Cue","text":"AI systems take on a vast majority\nof economically productive tasks.","time":1290052},{"__typename":"Cue","text":"In your mind, what are humans\ngoing to do in this future?","time":1294290},{"__typename":"Cue","text":"Are we all sipping piña coladas\non the beach, engaging in hobbies?","time":1297026}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: You tech liberal, you.","time":1300162},{"__typename":"Cue","text":"You must be in favor of UBI.","time":1302164}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: No, no, no.","time":1304900}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: Look, humans are unchanged","time":1306101},{"__typename":"Cue","text":"in the midst of this incredible discovery.","time":1309138},{"__typename":"Cue","text":"Do you really think that we're going\nto get rid of lawyers?","time":1311607},{"__typename":"Cue","text":"No, they're just going to have more\nsophisticated lawsuits.","time":1314443},{"__typename":"Cue","text":"Do you really think we're going\nto get rid of politicians?","time":1317680},{"__typename":"Cue","text":"No, they'll just have more\nplatforms to mislead you.","time":1320449},{"__typename":"Cue","text":"Sorry.","time":1322918},{"__typename":"Cue","text":"I mean, I can just go on and on and on.","time":1324320},{"__typename":"Cue","text":"The key thing to understand\nabout this new economics","time":1326722},{"__typename":"Cue","text":"is that we collectively, as a society,\nare not having enough humans.","time":1330326},{"__typename":"Cue","text":"Look at the reproduction rate in Asia,","time":1335197},{"__typename":"Cue","text":"is essentially 1.0 for two parents.","time":1337566},{"__typename":"Cue","text":"This is not good, right?","time":1340302},{"__typename":"Cue","text":"So for the rest of our lives,","time":1342338},{"__typename":"Cue","text":"the key problem is going to get\nthe people who are productive.","time":1344373},{"__typename":"Cue","text":"That is, in their productive\nperiod of lives,","time":1347309},{"__typename":"Cue","text":"more productive to support\nold people like me, right,","time":1349511},{"__typename":"Cue","text":"who will be bitching that we want\nmore stuff from the younger people.","time":1353983},{"__typename":"Cue","text":"That's how it's going to work.","time":1357253},{"__typename":"Cue","text":"These tools will radically\nincrease that productivity.","time":1358754},{"__typename":"Cue","text":"There's a study that says that we will,","time":1362424},{"__typename":"Cue","text":"under this set of assumptions\naround agentic AI and discovery","time":1364493},{"__typename":"Cue","text":"and the scale that I'm describing,","time":1367696},{"__typename":"Cue","text":"there's a lot of assumptions","time":1369365},{"__typename":"Cue","text":"that you'll end up","time":1371000},{"__typename":"Cue","text":"with something like 30-percent increase\nin productivity per year.","time":1372601},{"__typename":"Cue","text":"Having now talked\nto a bunch of economists,","time":1376939},{"__typename":"Cue","text":"they have no models","time":1379041},{"__typename":"Cue","text":"for what that kind of increase\nin productivity looks like.","time":1380910},{"__typename":"Cue","text":"We just have never seen it.","time":1384013},{"__typename":"Cue","text":"It didn't occur in any rise of a democracy\nor a kingdom in our history.","time":1385881},{"__typename":"Cue","text":"It's unbelievable what's going to happen.","time":1392021},{"__typename":"Cue","text":"Hopefully we will get it\nin the right direction.","time":1395190}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: It is truly unbelievable.","time":1398727},{"__typename":"Cue","text":"Let's bring this home, Eric.","time":1400162},{"__typename":"Cue","text":"You've navigated decades\nof technological change.","time":1401563},{"__typename":"Cue","text":"For everyone that's navigating\nthis AI transition,","time":1404400},{"__typename":"Cue","text":"technologists, leaders, citizens","time":1406969},{"__typename":"Cue","text":"that are feeling a mix\nof excitement and anxiety,","time":1409204},{"__typename":"Cue","text":"what is that single piece of wisdom","time":1412408},{"__typename":"Cue","text":"or advice you'd like to offer","time":1414576},{"__typename":"Cue","text":"for navigating this insane moment\nthat we're living through today?","time":1416512}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: So one thing to remember","time":1420282},{"__typename":"Cue","text":"is that this is a marathon, not a sprint.","time":1422151},{"__typename":"Cue","text":"One year I decided to do\na 100-mile bike race,","time":1426355},{"__typename":"Cue","text":"which was a mistake.","time":1429391},{"__typename":"Cue","text":"And the idea was,\nI learned about spin rate.","time":1430659},{"__typename":"Cue","text":"Every day, you get up,\nand you just keep going.","time":1433996},{"__typename":"Cue","text":"You know, from our work\ntogether at Google,","time":1436365},{"__typename":"Cue","text":"that when you’re growing\nat the rate that we’re growing,","time":1438734},{"__typename":"Cue","text":"you get so much done in a year,","time":1443305},{"__typename":"Cue","text":"you forget how far you went.","time":1445574},{"__typename":"Cue","text":"Humans can't understand that.","time":1448811},{"__typename":"Cue","text":"And we're in this situation","time":1450813},{"__typename":"Cue","text":"where the exponential is moving like this.","time":1452414},{"__typename":"Cue","text":"As this stuff happens quicker,","time":1454883},{"__typename":"Cue","text":"you will forget what was true\ntwo years ago or three years ago.","time":1456785},{"__typename":"Cue","text":"That's the key thing.","time":1462057},{"__typename":"Cue","text":"So my advice to you all is ride the wave,\nbut ride it every day.","time":1463625},{"__typename":"Cue","text":"Don't view it as episodic\nand something you can end,","time":1468497},{"__typename":"Cue","text":"but understand it and build on it.","time":1471000}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"Each and every one of you\nhas a reason to use this technology.","time":1473469},{"__typename":"Cue","text":"If you're an artist,\na teacher, a physician,","time":1477506},{"__typename":"Cue","text":"a business person, a technical person.","time":1481010},{"__typename":"Cue","text":"If you're not using this technology,","time":1483712},{"__typename":"Cue","text":"you're not going to be relevant\ncompared to your peer groups","time":1486048},{"__typename":"Cue","text":"and your competitors","time":1489351},{"__typename":"Cue","text":"and the people who want to be successful.","time":1490552},{"__typename":"Cue","text":"Adopt it, and adopt it fast.","time":1493188}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"I have been shocked\nat how fast these systems --","time":1495090},{"__typename":"Cue","text":"as an aside, my background\nis enterprise software,","time":1498093},{"__typename":"Cue","text":"and nowadays there's a model\nProtocol from Anthropic.","time":1502631},{"__typename":"Cue","text":"You can actually connect the model\ndirectly into the databases","time":1506935},{"__typename":"Cue","text":"without any of the connectors.","time":1510105},{"__typename":"Cue","text":"I know this sounds nerdy.","time":1511607},{"__typename":"Cue","text":"There's a whole industry\nthere that goes away","time":1512875},{"__typename":"Cue","text":"because you have all this flexibility now.","time":1515010},{"__typename":"Cue","text":"You can just say what you want,\nand it just produces it.","time":1517079},{"__typename":"Cue","text":"That's an example\nof a real change in business.","time":1520049},{"__typename":"Cue","text":"There are so many of these things\ncoming every day.","time":1522618}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"BS: Ladies and gentlemen, Eric Schmidt.","time":1525687}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"ES: Thank you very much.","time":1527656}]},{"__typename":"Paragraph","cues":[{"__typename":"Cue","text":"(Applause)","time":1528857}]}],"id":"275376","language":{"__typename":"AcmeLanguage","id":"35","endonym":"English","englishName":"English","internalLanguageCode":"en","rtl":false},"reviewer":null,"translator":null},"video":{"__typename":"Video","id":"148366","talkExtras":{"__typename":"TalkExtras","footnotes":[{"__typename":"Footnote","author":null,"annotation":"\u003e “... in a game that had been around for 2,500 years ...\"\r\n\r\nNote: Go was likely invented between 3,000 and 4,000 years ago. You can read more [here](https://intergofed.org/history-of-go/).","date":null,"linkUrl":null,"source":null,"text":null,"timecode":"0:40","title":null,"category":"note"},{"__typename":"Footnote","author":null,"annotation":"\u003e \"Dr. Kissinger, who we all worked with very closely, was one of the architects of mutually assured destruction, deterrence and so forth.\"\r\n\r\nNote: Among Henry Kissinger's achievements were the negotiations of the first Strategic Arms Limitation Treaty (SALT I) and the Anti-Ballistic Missile Treaty. You can read more about Kissinger's work [here](https://sais.jhu.edu/kissinger/about/legacy).","date":null,"linkUrl":null,"source":null,"text":null,"timecode":"10:58","title":null,"category":"note"},{"__typename":"Footnote","author":null,"annotation":"\u003e \"The key thing to understand about this new economics is that we collectively, as a society, are not having enough humans. Look at the reproduction rate in Asia, it's essentially 1.0 for two parents.\"\r\n\r\nNote: This refers to an increase in the aging population worldwide, and lower birth rates in some countries. You can read more here and compare birth rates in [this CIA dataset](https://www.cia.gov/the-world-factbook/field/total-fertility-rate/country-comparison/). (Note on Asia: Filtering for East and Southeast Asia shows that most East Asian countries have a birth rate of 1.5 children per woman or less, lower than almost all other regions except for parts of Europe.)","date":null,"linkUrl":null,"source":null,"text":null,"timecode":"22:07","title":null,"category":"note"},{"__typename":"Footnote","author":null,"annotation":"\u003e \"Since then, the gains in what is called reinforcement learning, which is what AlphaGo helped invent and so forth ...\"\r\n\r\nNote: Reinforcement learning has been used in early artificial intelligence systems since at least the 1990s. You can read more about its early implementations [here](https://www.sciencedirect.com/science/article/abs/pii/S0166411597801057).","date":null,"linkUrl":null,"source":null,"text":null,"timecode":"2:08","title":null,"category":"note"},{"__typename":"Footnote","author":null,"annotation":"\u003e \"There's one calculation, and I testified on this this week in Congress, that we need another 90 gigawatts of power in America.\"\r\n\r\nNote: You can find this estimate from the CSIS Economic Security and Technology Department report [here](https://www.csis.org/analysis/securing-full-stack-us-leadership-ai).","date":null,"linkUrl":null,"source":null,"text":null,"timecode":"3:55","title":null,"category":"note"},{"__typename":"Footnote","author":null,"annotation":"\u003e \"The US military has a rule called 3000.09, generally known as 'human in the loop' or 'meaningful human control.' You don't want systems that are not under our control. It's a line we can't cross. I think that's correct.\"\r\n\r\nNote: Directive 3000.09 was recently updated in 2023, 10 years after it was introduced. You can read more about the updated directive [here](https://www.defense.gov/News/News-Stories/Article/Article/3278065/dod-updates-autonomy-in-weapons-system-directive/).","date":null,"linkUrl":null,"source":null,"text":null,"timecode":"9:59","title":null,"category":"note"}]}}},"commentsEnabled":true,"commentsLoggedInOnly":true},"__N_SSP":true},"page":"/talks/[...slug]","query":{"slug":["eric_schmidt_the_ai_revolution_is_underhyped","transcript"]},"buildId":"2bZ3c3Pmcb2joJ6kDg5Nf","isFallback":false,"isExperimentalCompile":false,"dynamicIds":[50086,44812,52057],"gssp":true,"scriptLoader":[]}
+      </script>
+    </body>

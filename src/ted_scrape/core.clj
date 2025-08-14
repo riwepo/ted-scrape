@@ -1,6 +1,7 @@
 (ns ted-scrape.core
-  (:require [cheshire.core :as json]
-            [clojure.string :as str]
+  (:require [clojure.string :as str]
+            [clojure.java.shell :refer [sh]]
+            [cheshire.core :as json]
             [clj-http.client :as http]
             [hickory.core :as hickory]))
 
@@ -12,12 +13,18 @@
 (defn save-transcript-html [slug]
   (->> slug
        (fetch-transcript-html)
-       (spit "transcript.txt")))
+       (spit "transcript-html.txt")))
 
 (defn extract-tree [html]
   (-> html
       hickory/parse
       hickory/as-hickory))
+
+(defn save-transcript-hickory [slug]
+  (->> slug
+       (fetch-transcript-html)
+       (extract-tree)
+       (spit "transcript-hickory.txt")))
 
 (defn format-node [node indent]
   (let [pad (apply str (repeat indent "  "))]               ; 2 spaces per level
@@ -93,7 +100,7 @@
 
 
 (defn richo []
-  (-> "transcript.txt"
+  (-> "transcript-html.txt"
       slurp
       extract-tree
       extract-linked-data-script
@@ -104,6 +111,19 @@
       decode-html
       (->>
         (spit "scripts.txt"))))
+
+
+(defn scrape-html [url output-file]
+  (let [{:keys [exit out err]} (sh "node" "src/scripts/scrapeHtml.js" url output-file)]
+    (println "📤 STDOUT:\n" out)
+    (when-not (zero? exit)
+      (println "⚠️ STDERR:\n" err))
+    out))
+
+(defn richo2 []
+  (scrape-html
+    "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript"
+    "transcript-puppeteer.txt"))
 
 
 
@@ -119,8 +139,12 @@
                          :content [{:type :element, :attrs nil, :tag :p, :content ["Hello world"]}]}]}]})
 
 (def p {:type :element, :attrs nil, :tag :p, :content ["Hello world"]})
+
+
 (comment
+  (save-transcript-hickory "eric_schmidt_the_ai_revolution_is_underhyped")
   (richo)
+  (richo2)
   (decode-html "we didn&apos;t understand")
   (save-transcript-html "eric_schmidt_the_ai_revolution_is_underhyped")
   (slug->file "eric_schmidt_the_ai_revolution_is_underhyped")
