@@ -81,13 +81,13 @@
                    (get-in % [:attrs :class] "") "icon-play") icons)))))
 
 
-(defn collect-with-grandparent
+(defn collect-paragraphs
   [tree predicate]
   (letfn [(walk [node parent grandparent]
             (cond
               (map? node)
               (let [matches (if (predicate node)
-                              [{:node node :grandparent grandparent}]
+                              [grandparent]
                               [])]
                 (into matches
                       (mapcat #(walk % node parent) (:content node))))
@@ -98,14 +98,67 @@
               :else []))]
     (walk tree nil nil)))
 
+(defn span-with-single-content? [node]
+  (and (= (:tag node) :span)
+       (let [content (:content node)
+             count (count content)]
+         (and (= 1 count)))))
+
+
+
+(defn collect-matching-nodes
+  [tree predicate]
+  (letfn [(walk [node]
+            (cond
+              (map? node)
+              (let [matches (if (predicate node) [node] [])]
+                (into matches (mapcat walk (:content node))))
+
+              (sequential? node)
+              (mapcat walk node)
+
+              :else []))]
+    (walk tree)))
+
+(defn get-span-content [node]
+  (first (:content node)))
+
+(defn clean-sentence_fragment [s]
+  (-> s
+      (str/replace #"\n" " ")
+      (str/trim)))
+
+
+
+
+
 (defn richo []
-  (let [raw-str (slurp "transcript-hickory.edn")
-        page-markup (edn/read-string raw-str)]
-    (spit "paragraph-collection.edn" (collect-with-grandparent page-markup button-with-play-icons?))))
+  (let [raw-str (slurp "data/transcript-hickory.edn")
+        page-markup (edn/read-string raw-str)
+        paragraph-collection (collect-paragraphs page-markup button-with-play-icons?)]
+    (println (count paragraph-collection))
+    (spit "data/paragraph-collection.edn" paragraph-collection)))
+
+(def test-span {:tag :span
+                :content ["hello"]})
+
+(defn fred []
+  (span-with-single-content? test-span))
+
+(defn richo2 []
+  (let [raw-str (slurp "data/first-paragraph.edn")
+        paragraph-markup (edn/read-string raw-str)
+        sentence-node-collection (collect-matching-nodes paragraph-markup span-with-single-content?)
+        sentence-collection (mapv (comp clean-sentence_fragment get-span-content) sentence-node-collection)
+        sentence (str/join " " sentence-collection)]
+    (spit "data/finished-result.txt" sentence)))
+
 
 
 (comment
   (richo)
+  (richo2)
+  (fred)
   (nop))
 
 
