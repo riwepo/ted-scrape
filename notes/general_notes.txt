@@ -22,7 +22,5 @@ it is necessary for the page js to flesh out the page
 for this we need a headless browser
 there is one called puppeteer
 have to run it from nodejs
-to do this from clojure, we use babashka to call a node script
-we write the script in js
-I have installed babashka using scoop
-scoop installs programs on Window in a lightweight way under the user folder
+
+i used clojure.java.shell to run a node script
