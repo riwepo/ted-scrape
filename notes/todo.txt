@@ -1,0 +1,6 @@
+
+
+store one paragraph in a file
+extract all of the transcript from that one paragraph and concat into a string
+then apply this to all paragraphs in the transcript
+also get the time from the button stored with each paragraph
