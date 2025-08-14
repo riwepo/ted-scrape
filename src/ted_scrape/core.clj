@@ -1,5 +1,6 @@
 (ns ted-scrape.core
   (:require [clojure.string :as str]
+            [clojure.edn :as edn]
             [clojure.java.shell :refer [sh]]
             [cheshire.core :as json]
             [clj-http.client :as http]
@@ -120,11 +121,11 @@
        (extract-tree)
        (spit output-file)))
 
-(defn richo []
-   (scrape-html-with-puppeteer-script
-     "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript"
-     "transcript-html.txt")
-    (convert-transcript-hickory "transcript-html.txt" "transcript-hickory.txt"))
+;(defn richo []
+;   (scrape-html-with-puppeteer-script
+;     "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript"
+;     "transcript-html.txt")
+;    (convert-transcript-hickory "transcript-html.txt" "transcript-hickory.txt"))
 
 ;(def tree
 ;  {:type    :document,
@@ -139,6 +140,56 @@
 
 ;(def p {:type :element, :attrs nil, :tag :p, :content ["Hello world"]})
 
+(def button-markup
+  {:type  :element,
+   :attrs {:type     "button", :class "group flex items-center justify-between rounded-full bg-gray-50 px-3 py-2 w-20",
+           :tabindex "0"},
+   :tag   :button,
+   :content
+   [{:type  :element,
+     :attrs {:class "relative flex h-4 w-4 items-center justify-center text-red-500"},
+     :tag   :div,
+     :content
+     [{:type  :element,
+       :attrs {:aria-hidden "true", :class "icon-play-filled absolute size-full opacity-0 group-hover:opacity-100"},
+       :tag   :i, :content nil}
+      {:type  :element,
+       :attrs {:aria-hidden "true", :class "icon-play absolute size-full"},
+       :tag   :i, :content nil}]}
+    {:type    :element,
+     :attrs   {:class "text-textPrimary-onLight font-normal text-tui-sm leading-tui-md tracking-tui-tight lg:leading-tui-lg",
+               :dir   "ltr"},
+     :tag     :span,
+     :content ["00:04"]}]})
+
+(defn button-with-play-icons? [node]
+  (and (= (:tag node) :button)
+       (let [content (:content node)
+             div (first content)
+             icons (:content div)]
+         (and (= (:tag div) :div)
+              (= (count icons) 2)
+              (every? #(= (:tag %) :i) icons)
+              (some
+                #(str/includes?
+                   (get-in % [:attrs :class] "") "icon-play-filled") icons)
+              (some
+                #(str/includes?
+                   (get-in % [:attrs :class] "") "icon-play") icons)))))
+
+(defn collect-buttons [atom node]
+  (when (map? node)
+    (when (button-with-play-icons? node)
+      (swap! atom conj node))
+    (doseq [child (:content node)]
+      (collect-buttons atom child))))
+
+(defn richo []
+  (let [matched-buttons (atom [])
+        raw-str (slurp "transcript-hickory.txt")
+        page-markup (edn/read-string raw-str)]
+    (collect-buttons matched-buttons page-markup)
+    @matched-buttons))
 
 (comment
   (richo)
