@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Deps: net.rootdev/java-rdfa:1.0.0-BETA1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/rootdev/java-rdfa/1.0.0-BETA1/java-rdfa-1.0.0-BETA1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
