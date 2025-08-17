@@ -91,20 +91,16 @@
                               [])]
                 (into matches
                       (mapcat #(walk % node parent) (:content node))))
-
               (sequential? node)
               (mapcat #(walk % parent grandparent) node)
-
               :else []))]
     (walk tree nil nil)))
 
-(defn span-with-single-content? [node]
+(defn span-with-single-literal-string-content? [node]
   (and (= (:tag node) :span)
-       (let [content (:content node)
-             count (count content)]
-         (and (= 1 count)))))
-
-
+       (let [content (:content node)]
+         (and (= 1 (count content))
+              (string? (first content))))))
 
 (defn collect-matching-nodes
   [tree predicate]
@@ -113,10 +109,8 @@
               (map? node)
               (let [matches (if (predicate node) [node] [])]
                 (into matches (mapcat walk (:content node))))
-
               (sequential? node)
               (mapcat walk node)
-
               :else []))]
     (walk tree)))
 
@@ -128,8 +122,11 @@
       (str/replace #"\n" " ")
       (str/trim)))
 
-
-
+(defn fragments->paragraph [coll]
+  (let [timestamp (first coll)
+        fragments (rest coll)
+        paragraph (str/join " " fragments)]
+    {:timestamp timestamp :content paragraph}))
 
 
 (defn richo []
@@ -139,25 +136,48 @@
     (println (count paragraph-collection))
     (spit "data/paragraph-collection.edn" paragraph-collection)))
 
-(def test-span {:tag :span
-                :content ["hello"]})
-
-(defn fred []
-  (span-with-single-content? test-span))
-
 (defn richo2 []
   (let [raw-str (slurp "data/first-paragraph.edn")
         paragraph-markup (edn/read-string raw-str)
-        sentence-node-collection (collect-matching-nodes paragraph-markup span-with-single-content?)
+        sentence-node-collection (collect-matching-nodes paragraph-markup span-with-single-literal-string-content?)
         sentence-collection (mapv (comp clean-sentence_fragment get-span-content) sentence-node-collection)
         sentence (str/join " " sentence-collection)]
     (spit "data/finished-result.txt" sentence)))
 
+(defn tree->paragraph [tree]
+  (-> tree
+       (collect-matching-nodes span-with-single-literal-string-content?)
+       (->>
+         (map get-span-content)
+         (map clean-sentence_fragment)
+         (fragments->paragraph))))
 
+(defn richo3 []
+  (let [raw-str (slurp "data/test-paragraph.edn")
+        paragraph-markup (edn/read-string raw-str)
+        paragraph (tree->paragraph paragraph-markup)]
+    (spit "data/finished-result.txt" paragraph)))
+
+(defn richo4 []
+  (let [raw-str (slurp "data/paragraph-collection.edn")
+        tree-collection (edn/read-string raw-str)
+        paragraph-collection (mapv tree->paragraph tree-collection)
+        valid-paragraphs (filterv #(seq (:content %)) paragraph-collection)]
+        ;transcript (str/join "\n" paragraph-collection)]
+    (spit "data/finished-result.txt" valid-paragraphs)))
+
+(defn richo5 []
+  (let [raw-str (slurp "data/paragraph-collection.edn")
+        tree-collection (edn/read-string raw-str)
+        last (nth tree-collection 59)]
+    (spit "data/test-paragraph.edn" last)))
 
 (comment
   (richo)
   (richo2)
+  (richo3)
+  (richo4)
+  (richo5)
   (fred)
   (nop))
 

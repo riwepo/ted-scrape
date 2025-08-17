@@ -30,3 +30,14 @@ On the test page there are 60 paragraphs.
 
 I have retrieved the first paragraph.
 Need to map that on to the whole page to get all paragraphs.
+
+I have retrieved all the paragraphs.
+However the last few paragraphs are footnotes.
+These have the same button, but I am getting blank data for them.
+For the first pass, I will leave out the footnotes.
+
+I have the content as objects {:timestamp :content}
+and the empty ones (the footnotes) are filtered out
+
+
+
