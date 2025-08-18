@@ -2,7 +2,8 @@
   (:require [clojure.string :as str]
             [clojure.edn :as edn]
             [clojure.java.shell :refer [sh]]
-            [hickory.core :as hickory]))
+            [hickory.core :as hickory]
+            [hickory.select :as hs]))
 
 (defn extract-tree [html]
   (-> html
@@ -30,7 +31,7 @@
       (println "⚠️ STDERR:\n" err))
     out))
 
-(defn convert-transcript-hickory [input-file output-file]
+(defn convert-html-hickory [input-file output-file]
   (->> input-file
        (slurp)
        (extract-tree)
@@ -39,8 +40,8 @@
 ;(defn richo []
 ;   (scrape-html-with-puppeteer-script
 ;     "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript"
-;     "transcript-html.txt")
-;    (convert-transcript-hickory "transcript-html.txt" "transcript-hickory.edn"))
+;     "full-page-html.txt")
+;    (convert-transcript-hickory "full-page-html.txt" "transcript-hickory.edn"))
 
 
 ;(def button-markup
@@ -128,6 +129,17 @@
         paragraph (str/join " " fragments)]
     {:timestamp timestamp :content paragraph}))
 
+(defn scrape-talk-title [tree]
+  (let [selector (hs/child (hs/id "talk-title") (hs/tag "h1"))
+        match (first (hs/select selector tree))]
+    (some-> match :content first str)))
+
+(defn richo6 []
+  (let [raw-str (slurp "data/transcript-hickory.edn")
+        page-markup (edn/read-string raw-str)
+        talk-title (scrape-talk-title page-markup)]
+    (println talk-title)))
+
 
 (defn richo []
   (let [raw-str (slurp "data/transcript-hickory.edn")
@@ -146,11 +158,11 @@
 
 (defn tree->paragraph [tree]
   (-> tree
-       (collect-matching-nodes span-with-single-literal-string-content?)
-       (->>
-         (map get-span-content)
-         (map clean-sentence_fragment)
-         (fragments->paragraph))))
+      (collect-matching-nodes span-with-single-literal-string-content?)
+      (->>
+        (map get-span-content)
+        (map clean-sentence_fragment)
+        (fragments->paragraph))))
 
 (defn richo3 []
   (let [raw-str (slurp "data/test-paragraph.edn")
@@ -163,7 +175,7 @@
         tree-collection (edn/read-string raw-str)
         paragraph-collection (mapv tree->paragraph tree-collection)
         valid-paragraphs (filterv #(seq (:content %)) paragraph-collection)]
-        ;transcript (str/join "\n" paragraph-collection)]
+    ;transcript (str/join "\n" paragraph-collection)]
     (spit "data/finished-result.txt" valid-paragraphs)))
 
 (defn richo5 []
@@ -173,11 +185,13 @@
     (spit "data/test-paragraph.edn" last)))
 
 (comment
+  (convert-html-hickory "data/full-page-html.txt" "data/full-page-hickory.txt")
   (richo)
   (richo2)
   (richo3)
   (richo4)
   (richo5)
+  (richo6)
   (fred)
   (nop))
 
