@@ -9,6 +9,7 @@ save transcript to libre office file
 
 write tests for everything
 
-save everything to nicely formatted odt file
+talk is writing to odt file
+only problem is page breaks within paragraphs
 
 
