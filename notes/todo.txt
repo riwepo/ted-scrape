@@ -11,6 +11,4 @@ write tests for everything
 
 save everything to nicely formatted odt file
 
-tidy up
-
 
