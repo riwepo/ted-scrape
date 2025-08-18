@@ -4,13 +4,6 @@
             [clojure.edn :as edn]
             [hickory.select :as hs]))
 
-;(defn richo []
-;   (scrape-html-with-puppeteer-script
-;     "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript"
-;     "full-page-html.txt")
-;    (convert-transcript-hickory "full-page-html.txt" "transcript-hickory.edn"))
-
-
 (defn button-with-play-icons? [node]
   (and (= (:tag node) :button)
        (let [content (:content node)
@@ -27,8 +20,11 @@
                    (get-in % [:attrs :class] "") "icon-play") icons)))))
 
 
-(defn collect-paragraphs
-  [tree predicate]
+(defn collect-matching-grandparent-nodes
+  "walk the hickory tree
+  when a node matches the predicate
+  collect its grandparent in a vector"
+  [hickory-tree predicate]
   (letfn [(walk [node parent grandparent]
             (cond
               (map? node)
@@ -40,7 +36,7 @@
               (sequential? node)
               (mapcat #(walk % parent grandparent) node)
               :else []))]
-    (walk tree nil nil)))
+    (walk hickory-tree nil nil)))
 
 (defn span-with-single-literal-string-content? [node]
   (and (= (:tag node) :span)
@@ -49,7 +45,10 @@
               (string? (first content))))))
 
 (defn collect-matching-nodes
-  [tree predicate]
+  "walk the hickory tree
+  when a node matches the predicate
+  collect it in a vector"
+  [hickory-tree predicate]
   (letfn [(walk [node]
             (cond
               (map? node)
@@ -58,12 +57,12 @@
               (sequential? node)
               (mapcat walk node)
               :else []))]
-    (walk tree)))
+    (walk hickory-tree)))
 
 (defn get-span-content [node]
   (first (:content node)))
 
-(defn clean-sentence_fragment [s]
+(defn clean-sentence-fragment [s]
   (-> s
       (str/replace #"\n" " ")
       (str/trim)))
@@ -74,114 +73,62 @@
         paragraph (str/join " " fragments)]
     {:timestamp timestamp :content paragraph}))
 
-(defn scrape-speaker-title [tree]
+(defn scrape-title-speaker [hickory-tree]
   (let [selector (hs/child (hs/tag "head") (hs/tag "title"))
-        match (first (hs/select selector tree))
+        match (first (hs/select selector hickory-tree))
         content (:content match)
         title (first content)
         split1 (str/split title #":")
         speaker (first split1)
         split2 (str/split (second split1) #"\|")
         name (first split2)]
-    {:speaker (str/trim speaker) :title (str/trim name)}))
+    {:title (str/trim name) :speaker (str/trim speaker)}))
 
-;(defn scrape-description [tree]
-;  (let [selector (hs/and (hs/tag :script) (hs/attr :type "application/ld+json"))
-;        match (first (hs/select selector tree))]
-;    match))
-
-;(defn scrape-json-ld [tree]
-;  (let [selector (hs/and (hs/tag :script) (hs/attr :type #(= % "application/ld+json")))
-;        match (first (hs/select selector tree))
-;        str-content (first (:content match))
-;        content (json/parse-string str-content)]
-;    content))
-
-(defn scrape-json-ld [tree]
+(defn scrape-json-ld [hickory-tree]
+  "scrapes a json object
+  from a script in the header"
   (let [selector (hs/and (hs/tag :script)
                          (hs/attr :type #(= % "application/ld+json")))
-        match (first (hs/select selector tree))
+        match (first (hs/select selector hickory-tree))
         str-content (when (and match (:content match))
                       (first (:content match)))]
     (when (string? str-content)
       (json/parse-string str-content))))
 
 
-
-
-(defn scrape-description [tree]
-  (let [json (scrape-json-ld tree)
+(defn scrape-description [hickory-tree]
+  (let [json (scrape-json-ld hickory-tree)
         description (json "description")]
     description))
 
-
-(defn richo6 []
-  (let [raw-str (slurp "data/transcript-hickory.edn")
-        full-page-hiccup (edn/read-string raw-str)
-        talk-speaker-title (scrape-speaker-title full-page-hiccup)]
-    (println full-page-hiccup)
-    (println talk-speaker-title)))
-
-(defn richo7 []
-  (let [raw-str (slurp "data/transcript-hickory.edn")
-        full-page-hiccup (edn/read-string raw-str)
-        speaker-title (scrape-speaker-title full-page-hiccup)]
-    speaker-title))
-
-(defn richo8 []
-  (let [raw-str (slurp "data/transcript-hickory.edn")
-        full-page-hiccup (edn/read-string raw-str)
-        description (scrape-description full-page-hiccup)]
-    description))
-
-
-(defn richo []
-  (let [raw-str (slurp "data/transcript-hickory.edn")
-        page-markup (edn/read-string raw-str)
-        paragraph-collection (collect-paragraphs page-markup button-with-play-icons?)]
-    (println (count paragraph-collection))
-    (spit "data/paragraph-collection.edn" paragraph-collection)))
-
-(defn richo2 []
-  (let [raw-str (slurp "data/first-paragraph.edn")
-        paragraph-markup (edn/read-string raw-str)
-        sentence-node-collection (collect-matching-nodes paragraph-markup span-with-single-literal-string-content?)
-        sentence-collection (mapv (comp clean-sentence_fragment get-span-content) sentence-node-collection)
-        sentence (str/join " " sentence-collection)]
-    (spit "data/finished-result.txt" sentence)))
-
-(defn tree->paragraph [tree]
-  (-> tree
+(defn node->paragraph [grandfather-node]
+  (-> grandfather-node
       (collect-matching-nodes span-with-single-literal-string-content?)
       (->>
         (map get-span-content)
-        (map clean-sentence_fragment)
+        (map clean-sentence-fragment)
         (fragments->paragraph))))
 
-(defn richo3 []
-  (let [raw-str (slurp "data/test-paragraph.edn")
-        paragraph-markup (edn/read-string raw-str)
-        paragraph (tree->paragraph paragraph-markup)]
-    (spit "data/finished-result.txt" paragraph)))
+(defn scrape-ted-talk [hickory-tree]
+  (let [title-speaker (scrape-title-speaker hickory-tree)
+        description (scrape-description hickory-tree)
+        transcript-grandparent-nodes (collect-matching-grandparent-nodes hickory-tree button-with-play-icons?)
+        transcript-paragraphs (mapv node->paragraph transcript-grandparent-nodes)
+        valid-transcript-paragraphs (filterv #(seq (:content %)) transcript-paragraphs)]
+    {:title (:title title-speaker)
+     :speaker (:speaker title-speaker)
+     :description description
+     :transcript valid-transcript-paragraphs}))
 
-(defn richo4 []
-  (let [raw-str (slurp "data/paragraph-collection.edn")
-        tree-collection (edn/read-string raw-str)
-        paragraph-collection (mapv tree->paragraph tree-collection)
-        valid-paragraphs (filterv #(seq (:content %)) paragraph-collection)]
-    ;transcript (str/join "\n" paragraph-collection)]
-    (spit "data/finished-result.txt" valid-paragraphs)))
+(defn richo []
+  (let [raw-str (slurp "data/transcript-hickory.edn")
+        hickory-tree (edn/read-string raw-str)
+        ted-talk (scrape-ted-talk hickory-tree)]
+    (spit "data/finished-result.txt" ted-talk)))
 
-(defn richo5 []
-  (let [raw-str (slurp "data/paragraph-collection.edn")
-        tree-collection (edn/read-string raw-str)
-        last (nth tree-collection 59)]
-    (spit "data/test-paragraph.edn" last)))
 
 (comment
-  (richo6)
-  (richo7)
-  (richo8)
+  (richo)
   (nop))
 
 
