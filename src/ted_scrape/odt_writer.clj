@@ -28,16 +28,6 @@
       (write-para "With somme line breaks")
       (.save "data/test.odt")))
 
-
-
-
-
-
-
-
-
-
-
 (comment
   (richo2)
   (create-doc)
