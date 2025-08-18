@@ -1,7 +1,7 @@
 (ns ted-scrape.odt-writer
   (:require [clojure.edn :as edn])
   (:import [org.odftoolkit.odfdom.doc OdfTextDocument]
-           [org.odftoolkit.odfdom.dom.element.text TextHElement TextPElement]))
+           [org.odftoolkit.odfdom.dom.element.text TextHElement TextLineBreakElement TextPElement]))
 
 (def heading-formats {:h1 {:style-name "Heading_20_1" :outline-level 1}
                       :h2 {:style-name "Heading_20_2" :outline-level 2}
@@ -20,9 +20,13 @@
 
 (defn write-para [doc style-name text]
   (let [dom (.getContentDom doc)
-        para (TextPElement. dom)]
-    (.setTextContent para text)
+        para (TextPElement. dom)
+        lines (clojure.string/split text #"\n")]
     (.setTextStyleNameAttribute para style-name)
+    (doseq [[i line] (map-indexed vector lines)]
+      (.appendChild para (.createTextNode dom line))
+      (when (< i (dec (count lines)))
+        (.appendChild para (.newOdfElement dom TextLineBreakElement))))
     (.appendChild (.getContentRoot doc) para)
     doc))
 
@@ -37,8 +41,7 @@
                 (write-para (:body style-names) "")
                 (write-heading (:h3 heading-formats) "Transcript"))]
     (reduce (fn [d para]
-              (write-para d (:body style-names) (:timestamp para))
-              (write-para d (:body style-names) (:content para))
+              (write-para d (:body style-names) (str (:timestamp para) "\n" (:content para)))
               (write-para d (:body style-names) ""))
             doc
             (:transcript ted-talk))))
