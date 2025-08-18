@@ -8,3 +8,9 @@ also get the time from the button stored with each paragraph
 save transcript to libre office file
 
 write tests for everything
+
+
+i need to get the title and the speaker
+
+separate scraping from analysing
+
