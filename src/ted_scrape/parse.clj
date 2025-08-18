@@ -1,5 +1,6 @@
 (ns ted-scrape.parse
-  (:require [clojure.string :as str]
+  (:require [cheshire.core :as json]
+            [clojure.string :as str]
             [clojure.edn :as edn]
             [hickory.select :as hs]))
 
@@ -73,16 +74,65 @@
         paragraph (str/join " " fragments)]
     {:timestamp timestamp :content paragraph}))
 
-(defn scrape-talk-title [tree]
-  (let [selector (hs/child (hs/id "talk-title") (hs/tag "h1"))
-        match (first (hs/select selector tree))]
-    (some-> match :content first str)))
+(defn scrape-speaker-title [tree]
+  (let [selector (hs/child (hs/tag "head") (hs/tag "title"))
+        match (first (hs/select selector tree))
+        content (:content match)
+        title (first content)
+        split1 (str/split title #":")
+        speaker (first split1)
+        split2 (str/split (second split1) #"\|")
+        name (first split2)]
+    {:speaker (str/trim speaker) :title (str/trim name)}))
+
+;(defn scrape-description [tree]
+;  (let [selector (hs/and (hs/tag :script) (hs/attr :type "application/ld+json"))
+;        match (first (hs/select selector tree))]
+;    match))
+
+;(defn scrape-json-ld [tree]
+;  (let [selector (hs/and (hs/tag :script) (hs/attr :type #(= % "application/ld+json")))
+;        match (first (hs/select selector tree))
+;        str-content (first (:content match))
+;        content (json/parse-string str-content)]
+;    content))
+
+(defn scrape-json-ld [tree]
+  (let [selector (hs/and (hs/tag :script)
+                         (hs/attr :type #(= % "application/ld+json")))
+        match (first (hs/select selector tree))
+        str-content (when (and match (:content match))
+                      (first (:content match)))]
+    (when (string? str-content)
+      (json/parse-string str-content))))
+
+
+
+
+(defn scrape-description [tree]
+  (let [json (scrape-json-ld tree)
+        description (json "description")]
+    description))
+
 
 (defn richo6 []
   (let [raw-str (slurp "data/transcript-hickory.edn")
-        page-markup (edn/read-string raw-str)
-        talk-title (scrape-talk-title page-markup)]
-    (println talk-title)))
+        full-page-hiccup (edn/read-string raw-str)
+        talk-speaker-title (scrape-speaker-title full-page-hiccup)]
+    (println full-page-hiccup)
+    (println talk-speaker-title)))
+
+(defn richo7 []
+  (let [raw-str (slurp "data/transcript-hickory.edn")
+        full-page-hiccup (edn/read-string raw-str)
+        speaker-title (scrape-speaker-title full-page-hiccup)]
+    speaker-title))
+
+(defn richo8 []
+  (let [raw-str (slurp "data/transcript-hickory.edn")
+        full-page-hiccup (edn/read-string raw-str)
+        description (scrape-description full-page-hiccup)]
+    description))
 
 
 (defn richo []
@@ -129,6 +179,9 @@
     (spit "data/test-paragraph.edn" last)))
 
 (comment
+  (richo6)
+  (richo7)
+  (richo8)
   (nop))
 
 
