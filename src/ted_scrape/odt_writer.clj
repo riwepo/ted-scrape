@@ -1,5 +1,6 @@
 (ns ted-scrape.odt-writer
-  (:require [clojure.edn :as edn])
+  (:require [clojure.edn :as edn]
+            [clojure.string :as str])
   (:import [org.odftoolkit.odfdom.doc OdfTextDocument]
            [org.odftoolkit.odfdom.dom.element.style
             StyleParagraphPropertiesElement]
@@ -91,8 +92,9 @@
 (defn richo []
   (let [raw-str (slurp "data/ted-talk.edn")
         ted-talk (edn/read-string raw-str)
+        title (str/replace (:title ted-talk) #" " "-")
         doc (write-ted-talk ted-talk)]
-    (.save doc "data/ted-talk.odt")))
+    (.save doc (str "data/" title ".odt"))))
 
 (comment
   (richo)
