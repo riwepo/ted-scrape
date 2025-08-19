@@ -2,7 +2,8 @@
   (:require [cheshire.core :as json]
             [clojure.string :as str]
             [clojure.edn :as edn]
-            [hickory.select :as hs]))
+            [hickory.select :as hs]
+            [ted-scrape.utils :refer [decode-html]]))
 
 (defn button-with-play-icons? [node]
   (and (= (:tag node) :button)
@@ -98,8 +99,9 @@
 
 (defn scrape-description [hickory-tree]
   (let [json (scrape-json-ld hickory-tree)
-        description (json "description")]
-    description))
+        description (json "description")
+        decoded (decode-html description)]
+    decoded))
 
 (defn node->paragraph [grandfather-node]
   (-> grandfather-node
@@ -128,6 +130,7 @@
 
 
 (comment
+  (edn/read-string (slurp "data/full-page-hickory.edn"))
   (richo)
   (nop))
 
