@@ -130,7 +130,6 @@
 
 
 (comment
-  (edn/read-string (slurp "data/full-page-hickory.edn"))
   (richo)
   (nop))
 
