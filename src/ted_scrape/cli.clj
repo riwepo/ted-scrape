@@ -53,11 +53,14 @@
   (let [{:keys [options exit-message ok?]} (validate-args args)]
     (if exit-message
       (exit (if ok? 0 1) exit-message)
-      (run options))))
+      (let [{:keys [message ok?]} (run options)]
+        (exit (if ok? 0 1) message)))))
+
 
 (comment
   ;(-main "--url" "https://www.ted.com/talks/slug/transcript")
   (-main "-u" "https://www.ted.com/talks/slug/transcript" "-o" "C:/temp")
+  (-main "-u" "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript" "-o" "C:/temp")
   (nop))
 
 
