@@ -1,4 +1,4 @@
 (ns ted-scrape.core)
-(defn run [url options]
-  (println url options)
+(defn run [options]
+  (println "running program with these args" options)
   true)
