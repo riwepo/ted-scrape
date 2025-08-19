@@ -6,10 +6,7 @@ title, speaker, description, transcript
 this has all been done working on one saved ted talk hickory file
 
 next steps
-1) try some other talks just in case something fails
-2) some text is still html encoded
-3) generate file name automatically
-4) eliminate the save to file step
+1) eliminate the save to file step
 
 
 
