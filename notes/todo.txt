@@ -1,15 +1,13 @@
 
 
-store one paragraph in a file
-extract all of the transcript from that one paragraph and concat into a string
-then apply this to all paragraphs in the transcript
-also get the time from the button stored with each paragraph
+we are writing ted talk to file
+title, speaker, description, transcript
 
-save transcript to libre office file
+this has all been done working on one saved ted talk hickory file
 
-write tests for everything
+next steps
+1) try some other talks just in case something fails
+2) eliminate the save to file step
 
-talk is writing to odt file
-only problem is page breaks within paragraphs
 
 
