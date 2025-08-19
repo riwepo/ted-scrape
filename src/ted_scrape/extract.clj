@@ -38,6 +38,8 @@
 
 
 (comment
+    (scrape-html-with-puppeteer-script "https://www.ted.com/talks/nada_majdalani_an_unexpected_plan_for_peace_in_the_middle_east/transcript" "data/full-page-html.txt")
+    (convert-html-hickory "data/full-page-html.txt" "data/full-page-hickory.edn")
     (nop))
 
 

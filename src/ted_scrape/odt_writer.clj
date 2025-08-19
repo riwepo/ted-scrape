@@ -92,7 +92,7 @@
   (let [raw-str (slurp "data/ted-talk.edn")
         ted-talk (edn/read-string raw-str)
         doc (write-ted-talk ted-talk)]
-    (.save doc "data/test.odt")))
+    (.save doc "data/ted-talk.odt")))
 
 (comment
   (richo)

@@ -121,10 +121,10 @@
      :transcript valid-transcript-paragraphs}))
 
 (defn richo []
-  (let [raw-str (slurp "data/transcript-hickory.edn")
+  (let [raw-str (slurp "data/full-page-hickory.edn")
         hickory-tree (edn/read-string raw-str)
         ted-talk (scrape-ted-talk hickory-tree)]
-    (spit "data/finished-result.txt" ted-talk)))
+    (spit "data/ted-talk.edn" ted-talk)))
 
 
 (comment
