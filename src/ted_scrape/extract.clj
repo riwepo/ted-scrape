@@ -42,7 +42,7 @@
        (spit output-file)))
 
 (comment
-  (scrape-html-with-puppeteer-script "https://www.ted.com/talks/nada_majdalani_an_unexpected_plan_for_peace_in_the_middle_east/transcript" "data/full-page-html.txt")
+  (scrape-html-with-puppeteer-script "https://www.ted.com/talks/hany_farid_how_to_spot_fake_ai_photos/transcript" "data/full-page-html.txt")
   (convert-html-hickory "data/full-page-html.txt" "data/full-page-hickory.edn")
   (nop))
 
