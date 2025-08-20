@@ -3,7 +3,8 @@
             [clojure.string :as str]
             [ted-scrape.extract :refer [scrape-html-with-puppeteer-script html->hickory]]
             [ted-scrape.parse :refer [parse-ted-talk]]
-            [ted-scrape.odt-writer :refer [write-ted-talk]]))
+            [ted-scrape.odt-writer :refer [write-ted-talk]]
+            [clojure.java.io :as io]))
 
 (defn reachable-url?
   "Returns true if the URL responds with a 2xx or 3xx status code."
@@ -25,7 +26,7 @@
               ted-talk (parse-ted-talk hickory-tree)
               title (str/replace (:title ted-talk) #" " "-")
               doc (write-ted-talk ted-talk)]
-          (.save doc (str "data/" title ".odt"))
+          (.save doc (io/file output-dir (str title ".odt")))
           {:exit 0})))))
 
 
