@@ -9,3 +9,5 @@ this could be incorporated with some tests
 but not sure if it is worth it
 
 working on getting node script to run from either file system or packages in jar
+
+need to install puppeteer locally to resources/scripts directory
