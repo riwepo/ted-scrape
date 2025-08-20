@@ -37,20 +37,18 @@
     ;; Otherwise, leave it unchanged
     :else node))
 
-(defn html->hickory [html output-file]
+(defn html->hickory [html]
   (->> html
        (extract-tree)
-       (decode-text-nodes)
-       (spit output-file)))
+       (decode-text-nodes)))
 
-(defn html-file->hickory [input-file output-file]
+(defn html-file->hickory-file [input-file output-file]
   (-> input-file
       (slurp)
-      (html->hickory output-file)))
+      (html->hickory)
+      (spit output-file)))
 
 (comment
-  (scrape-html-with-puppeteer-script "https://www.ted.com/talks/hany_farid_how_to_spot_fake_ai_photos/transcript" "data/full-page-html.txt")
-  (html-file->hickory "data/full-page-html.txt" "data/full-page-hickory.edn")
   nil)
 
 
