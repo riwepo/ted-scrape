@@ -1,7 +1,6 @@
 (ns ted-scrape.parse
   (:require [cheshire.core :as json]
             [clojure.string :as str]
-            [clojure.edn :as edn]
             [hickory.select :as hs]
             [ted-scrape.utils :refer [decode-html]]))
 
@@ -74,7 +73,7 @@
         paragraph (str/join " " fragments)]
     {:timestamp timestamp :content paragraph}))
 
-(defn scrape-title-speaker [hickory-tree]
+(defn parse-title-speaker [hickory-tree]
   (let [selector (hs/child (hs/tag "head") (hs/tag "title"))
         match (first (hs/select selector hickory-tree))
         content (:content match)
@@ -85,7 +84,7 @@
         name (first split2)]
     {:title (str/trim name) :speaker (str/trim speaker)}))
 
-(defn scrape-json-ld [hickory-tree]
+(defn parse-json-ld [hickory-tree]
   "scrapes a json object
   from a script in the header"
   (let [selector (hs/and (hs/tag :script)
@@ -97,8 +96,8 @@
       (json/parse-string str-content))))
 
 
-(defn scrape-description [hickory-tree]
-  (let [json (scrape-json-ld hickory-tree)
+(defn parse-description [hickory-tree]
+  (let [json (parse-json-ld hickory-tree)
         description (json "description")
         decoded (decode-html description)]
     decoded))
@@ -111,9 +110,9 @@
         (map clean-sentence-fragment)
         (fragments->paragraph))))
 
-(defn scrape-ted-talk [hickory-tree]
-  (let [title-speaker (scrape-title-speaker hickory-tree)
-        description (scrape-description hickory-tree)
+(defn parse-ted-talk [hickory-tree]
+  (let [title-speaker (parse-title-speaker hickory-tree)
+        description (parse-description hickory-tree)
         transcript-grandparent-nodes (collect-matching-grandparent-nodes hickory-tree button-with-play-icons?)
         transcript-paragraphs (mapv node->paragraph transcript-grandparent-nodes)
         valid-transcript-paragraphs (filterv #(seq (:content %)) transcript-paragraphs)]
@@ -122,16 +121,8 @@
      :description description
      :transcript valid-transcript-paragraphs}))
 
-(defn richo []
-  (let [raw-str (slurp "data/full-page-hickory.edn")
-        hickory-tree (edn/read-string raw-str)
-        ted-talk (scrape-ted-talk hickory-tree)]
-    (spit "data/ted-talk.edn" ted-talk)))
-
-
 (comment
-  (richo)
-  (nop))
+  nil)
 
 
 
