@@ -40,4 +40,15 @@ I have the content as objects {:timestamp :content}
 and the empty ones (the footnotes) are filtered out
 
 
+to build docker image
+docker build -t ted-scrape .
+
+to run docker image, map a directory and drop into bash shell
+docker run -it -v C:/temp:/output ted-scrape /bin/bash
+
+to run clojure app once in shell
+clojure -M -m ted-scrape.cli -u https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript -o /output
+
+
+
 
