@@ -1,10 +1,11 @@
-# Base image with Java + Node
-FROM node:20-bullseye
+# Base image with Java and Clojure CLI
+FROM clojure:openjdk-17-tools-deps
 
-# Install Clojure CLI
-RUN curl -O https://download.clojure.org/install/linux-install-1.11.1.1413.sh \
-    && chmod +x linux-install-1.11.1.1413.sh \
-    && ./linux-install-1.11.1.1413.sh
+# Install curl and Node.js (for Puppeteer)
+RUN apt-get update && apt-get install -y curl gnupg \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && npm install -g npm@latest
 
 # Create app directory
 WORKDIR /app
@@ -22,5 +23,5 @@ RUN npm install --omit=dev
 # Set back to app root
 WORKDIR /app
 
-# Default command (can be overridden)
-CMD clojure -M -m ted-scrape.cli
+# Set entrypoint so CLI args go to your Clojure app
+ENTRYPOINT ["clojure", "-M", "-m", "ted-scrape.cli"]
