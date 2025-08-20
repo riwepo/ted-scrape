@@ -1,10 +1,9 @@
 (ns build
       (:require [clojure.tools.build.api :as b]))
 
-(def lib 'riwepo/ted-scrape)
-(def version (format "1.0.%s" (b/git-count-revs nil)))
+
 (def class-dir "target/classes")
-(def uber-file (format "target/%s-%s-standalone.jar" (name lib) version))
+(def uber-file "target/ted-scrape.jar")
 
 ;; delay to defer side effects (artifact downloads)
 (def basis (delay (b/create-basis {:project "deps.edn"})))
