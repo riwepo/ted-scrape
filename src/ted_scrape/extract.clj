@@ -10,12 +10,12 @@
       hickory/parse
       hickory/as-hickory))
 
-(defn scrape-html-with-puppeteer-script [url output-file]
+(defn scrape-html-with-puppeteer-script [url]
   "returns a map
   exit is 0 for success, 1 for fail
-  out is STDOUT
+  out is STDOUT which contains the scraped HTML
   err is STDERR"
-  (let [result (sh "node" "src/scripts/scrapeHtml.js" url output-file)]
+  (let [result (sh "node" "src/scripts/scrapeHtml.js" url)]
     ;(println result)
     result))
 
@@ -37,16 +37,20 @@
     ;; Otherwise, leave it unchanged
     :else node))
 
-(defn html->hickory [input-file output-file]
-  (->> input-file
-       (slurp)
+(defn html->hickory [html output-file]
+  (->> html
        (extract-tree)
        (decode-text-nodes)
        (spit output-file)))
 
+(defn html-file->hickory [input-file output-file]
+  (-> input-file
+      (slurp)
+      (html->hickory output-file)))
+
 (comment
   (scrape-html-with-puppeteer-script "https://www.ted.com/talks/hany_farid_how_to_spot_fake_ai_photos/transcript" "data/full-page-html.txt")
-  (html->hickory "data/full-page-html.txt" "data/full-page-hickory.edn")
+  (html-file->hickory "data/full-page-html.txt" "data/full-page-hickory.edn")
   nil)
 
 
