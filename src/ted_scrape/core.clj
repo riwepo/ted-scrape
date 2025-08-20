@@ -16,13 +16,13 @@
   (if
     (not (reachable-url? url))
     {:status 1 :error "url not reachable"}
-    (let [{:keys [exit] :as result} (scrape-html-with-puppeteer-script url "data/full-page-html.txt")]
-      (println exit result)
+    (let [{:keys [exit out error] :as result} (scrape-html-with-puppeteer-script url)]
+      ;(println exit result)
       (if (not (= 0 exit))
         result
         (do
           (println "hickory")
-          (html->hickory "data/full-page-html.txt" "data/full-page-hickory.edn")
+          (html->hickory out "data/full-page-hickory.edn")
           {:exit 0 :out "finished"})))))                    ; extra steps here
 
 
