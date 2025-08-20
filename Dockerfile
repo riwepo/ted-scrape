@@ -23,5 +23,5 @@ RUN npm install --omit=dev
 # Set back to app root
 WORKDIR /app
 
-# Set entrypoint so CLI args go to your Clojure app
-ENTRYPOINT ["clojure", "-M", "-m", "ted-scrape.cli"]
+CMD ["clojure", "-M", "-m", "ted-scrape.cli"]
+
