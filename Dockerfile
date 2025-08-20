@@ -23,4 +23,4 @@ RUN npm install --omit=dev
 WORKDIR /app
 
 # Default command (can be overridden)
-CMD ["clojure", "-M", "-m", "your-namespace.core"]
+CMD clojure -M -m ted-scrape.cli
