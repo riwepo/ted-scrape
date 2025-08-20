@@ -15,7 +15,7 @@
   exit is 0 for success, 1 for fail
   out is STDOUT which contains the scraped HTML
   err is STDERR"
-  (let [result (sh "node" "src/scripts/scrapeHtml.js" url)]
+  (let [result (sh "node" "resources/scripts/scrapeHtml.js" url)]
     ;(println result)
     result))
 
