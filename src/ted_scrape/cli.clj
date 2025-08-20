@@ -48,8 +48,8 @@
 
 (defn do-exit [exit msg]
   (println msg)
-  (println exit))                                           ; remove later
-;(System/exit exit))
+  ;(println exit))                                           ; in dev, keep repl running just print status
+  (System/exit exit))
 
 (defn -main [& args]
   (let [{:keys [options exit-message ok?]} (validate-args args)]
