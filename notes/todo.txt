@@ -7,3 +7,5 @@ I could perhaps add more error handling
 if something goes wrong i'm not sure its going to fail gracefully
 this could be incorporated with some tests
 but not sure if it is worth it
+
+working on getting node script to run from either file system or packages in jar
