@@ -3,7 +3,12 @@
   hickory/hickory            {:mvn/version "0.7.1"}
   cheshire/cheshire          {:mvn/version "6.0.0"}
   org.odftoolkit/odfdom-java {:mvn/version "0.12.0"}
-  org.clojure/tools.cli      {:mvn/version "1.1.230"}}}
+  org.clojure/tools.cli      {:mvn/version "1.1.230"}}
+ :aliases
+ {:build
+  {:deps {io.github.clojure/tools.build {:mvn/version "0.10.10"}}
+   :ns-default build}}}
+
 
 
 

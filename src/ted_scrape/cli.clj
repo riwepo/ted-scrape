@@ -2,7 +2,9 @@
   (:require [clojure.string :as str]
             [clojure.tools.cli :refer [parse-opts]]
             [ted-scrape.utils :refer [valid-ted-transcript-url? valid-output-dir?]]
-            [ted-scrape.core :refer [run]]))
+            [ted-scrape.core :refer [run]])
+  (:gen-class))
+
 
 (def cli-options
   [["-u" "--url URL" "TED transcript URL"
