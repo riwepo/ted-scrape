@@ -20,6 +20,9 @@ WORKDIR /app/resources/scripts
 COPY resources/scripts/package.json .
 RUN npm install --omit=dev
 
+# Install Puppeteer browser (Chrome)
+RUN npx puppeteer browsers install chrome
+
 # Set back to app root
 WORKDIR /app
 
