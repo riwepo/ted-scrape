@@ -23,6 +23,7 @@
     <orderEntry type="library" name="Deps: commons-validator:1.7" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/core.specs.alpha:0.4.74" level="project" />
     <orderEntry type="library" name="Deps: org.clojure/spec.alpha:0.5.238" level="project" />
+    <orderEntry type="library" name="Deps: org.clojure/tools.cli:1.1.230" level="project" />
     <orderEntry type="library" name="Deps: commons-digester:2.1" level="project" />
     <orderEntry type="library" name="Deps: org.apache.httpcomponents/httpasyncclient:4.1.4" level="project" />
     <orderEntry type="library" name="Deps: com.fasterxml.jackson.dataformat/jackson-dataformat-cbor:2.18.3" level="project" />
