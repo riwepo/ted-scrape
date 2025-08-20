@@ -1,6 +1,6 @@
 (ns ted-scrape.core
   (:require [clj-http.client :as http]
-            [ted-scrape.extract :refer [scrape-html-with-puppeteer-script]]))
+            [ted-scrape.extract :refer [scrape-html-with-puppeteer-script html->hickory]]))
 
 (defn reachable-url?
   "Returns true if the URL responds with a 2xx or 3xx status code."
@@ -16,11 +16,14 @@
   (if
     (not (reachable-url? url))
     {:status 1 :error "url not reachable"}
-    (do
-      (let [result (scrape-html-with-puppeteer-script url "data/full-page-html.txt")]
-        ;(println result)
-        result))))
-; extra steps here)))
+    (let [{:keys [exit] :as result} (scrape-html-with-puppeteer-script url "data/full-page-html.txt")]
+      (println exit result)
+      (if (not (= 0 exit))
+        result
+        (do
+          (println "hickory")
+          (html->hickory "data/full-page-html.txt" "data/full-page-hickory.edn")
+          {:exit 0 :out "finished"})))))                    ; extra steps here
 
 
 
