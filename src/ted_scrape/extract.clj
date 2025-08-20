@@ -11,11 +11,14 @@
       hickory/as-hickory))
 
 (defn scrape-html-with-puppeteer-script [url output-file]
-  (let [{:keys [exit out err]} (sh "node" "src/scripts/scrapeHtml.js" url output-file)]
-    (println "📤 STDOUT:\n" out)
-    (when-not (zero? exit)
-      (println "⚠️ STDERR:\n" err))
-    out))
+  "returns a map
+  exit is 0 for success, 1 for fail
+  out is STDOUT
+  err is STDERR"
+  (let [result (sh "node" "src/scripts/scrapeHtml.js" url output-file)]
+    ;(println result)
+    result))
+
 
 (defn decode-text-nodes [node]
   (cond

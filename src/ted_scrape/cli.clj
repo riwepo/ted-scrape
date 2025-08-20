@@ -35,7 +35,7 @@
   should exit (with an error message, and optional ok status), or a map
   indicating the action the program should take and the options provided."
   [args]
-  (let [{:keys [options arguments errors summary]} (parse-opts args cli-options)]
+  (let [{:keys [options errors summary]} (parse-opts args cli-options)]
     (cond
       (:help options)                                       ; help => exit OK with usage summary
       {:exit-message (usage summary) :ok? true}
@@ -44,17 +44,17 @@
       :else                                                 ; run the program with options
       {:action "run" :options options})))
 
-(defn exit [status msg]
+(defn do-exit [exit msg]
   (println msg)
-  (println status)) ; remove later
-;(System/exit status))
+  (println exit)) ; remove later
+;(System/exit exit))
 
 (defn -main [& args]
   (let [{:keys [options exit-message ok?]} (validate-args args)]
     (if exit-message
-      (exit (if ok? 0 1) exit-message)
-      (let [{:keys [message ok?]} (run options)]
-        (exit (if ok? 0 1) message)))))
+      (do-exit (if ok? 0 1) exit-message)
+      (let [{:keys [exit out error]} (run options)]
+        (do-exit exit (str out " " error))))))
 
 
 (comment
