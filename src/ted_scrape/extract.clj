@@ -15,7 +15,7 @@
   out is STDOUT which contains the scraped HTML
   err is STDERR"
   (let [result (sh "node" "resources/scripts/scrapeHtml.js" url)]
-    ;(println result)
+    (println "run scrapeHtml.js on node returned result " result)
     result))
 
 (defn decode-text-nodes [node]

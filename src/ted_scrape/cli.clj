@@ -46,17 +46,18 @@
       :else                                                 ; run the program with options
       {:action "run" :options options})))
 
-(defn do-exit [exit msg]
-  (println msg)
+(defn do-exit [{:keys [exit out err]}]
+  (when err
+    (println err))
   ;(println exit))                                           ; in dev, keep repl running just print status
   (System/exit exit))
 
 (defn -main [& args]
   (let [{:keys [options exit-message ok?]} (validate-args args)]
     (if exit-message
-      (do-exit (if ok? 0 1) exit-message)
-      (let [{:keys [exit out error]} (run options)]
-        (do-exit exit (str out " " error))))))
+      (do-exit {:exit (if ok? 0 1) :err exit-message})
+      (let [result (run options)]
+        (do-exit result)))))
 
 
 (comment
