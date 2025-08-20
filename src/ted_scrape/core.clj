@@ -16,7 +16,7 @@
   (if
     (not (reachable-url? url))
     {:status 1 :error "url not reachable"}
-    (let [{:keys [exit out error] :as result} (scrape-html-with-puppeteer-script url)]
+    (let [{:keys [exit out] :as result} (scrape-html-with-puppeteer-script url)]
       ;(println exit result)
       (if (not (= 0 exit))
         result
