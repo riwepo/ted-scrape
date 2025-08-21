@@ -1,53 +1,64 @@
+-- Intro --
+This project calls a webs service (srape-api) to return the HTML of a TED Talk Transcript web page
+
+The urls of these web pages are all the same except for the slug.
+
 here is a url I used to test stuff
 
 https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript
+
+-- Getting page HTML --
+In order to scrape the html, you need a headless browser
+I have used puppeteer.js
+After trying several different ways to run this,
+I have decided the best way is as a web service in a docker container
+on the local machine it is running on port 3001
+here is a sample curl command
+curl -X POST http://localhost:3001/scrape -H "Content-Type: application/json" -d '{"url": "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript", "selector": "button > div > i:first-of-type" }'
+the parameters are 'url' and 'selector'
+selector string is used in a waitForSelector function in puppeteer
+the one I have chosen targets a button
+once this appears, the page is ready to be scraped
+the web service returns the entire html of the page
+scraping the webpage takes a few seconds, so in dev mode it is handy to save it as a file
+and use that file as input to parse.clj
+this is all handled in extract.clj
+
+-- Getting transcript HTML --
+Once we have the HTML, we have to process it to get the transcript out.
 
 I was able to find the whole transcript in a script in the head of the document.
 However it contains no paragraph splits.
 
 Better strategy.
-It seems each paragraph contains a recognizable button, with 2 icons and a time on the label.
-If we find each button, then walk back up the parent tree until we get to a div that contains another button,
-we have gone too far.
-I will collect all of the markup for each paragraph.
-After that I can parse out the transcript paragraph.
+Each paragraph contains a recognizable button, with 2 icons and a time on the label.
+I find the button nodes, then collect everything in the grandparents of those nodes.
+This gives me a collection of nodes.
+Each node contains a paragraph of transcript.
 
-Steps - write code to recognize a button.
-Make sure it finds the correct number.
-Use each as a seed. Walk back up the tree collecting markup.
-Store paragraphs in an atom.
+I process each paragraph to pull out the transcript paragraph.
+This is all handled in parse.clj
 
-I discovered the html from get is different from that seen in the browser
-it is necessary for the page js to flesh out the page
-for this we need a headless browser
-there is one called puppeteer
-have to run it from nodejs
+-- Writing text document --
+I save the transcript in an open office odt file.
+The name of the file is the same as the title of the talk.
+The file is saved to a directory passed on the command line.
+If no arg is passed, it defaults to the current directory.
+This is all handled by odt_writer.clj.
 
-i used clojure.java.shell to run a node script
-
-I have it to stage of collecting all of the markup that contains a paragraph.
-On the test page there are 60 paragraphs.
-
-I have retrieved the first paragraph.
-Need to map that on to the whole page to get all paragraphs.
-
-I have retrieved all the paragraphs.
-However the last few paragraphs are footnotes.
-These have the same button, but I am getting blank data for them.
-For the first pass, I will leave out the footnotes.
-
-I have the content as objects {:timestamp :content}
-and the empty ones (the footnotes) are filtered out
+-- Using the app --
+The app is packaged in a docker file.
+In this version, the task is kicked off from the command line WITHIN the docker container.
+Two command line arguments are url of the ted talk, and directory to store the file.
 
 
-to build docker image
-docker build -t ted-scrape .
 
-to run docker image, map a directory and drop into bash shell
-docker run -it -v C:/temp:/output ted-scrape /bin/bash
 
-to run clojure app once in shell
-clojure -M -m ted-scrape.cli -u https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript -o /output
+
+
+
+
+
 
 
 
