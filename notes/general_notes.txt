@@ -20,6 +20,8 @@ selector string is used in a waitForSelector function in puppeteer
 the one I have chosen targets a button
 once this appears, the page is ready to be scraped
 the web service returns the entire html of the page
+this module also converts the html to hickory
+and decodes any encoded html on the page
 scraping the webpage takes a few seconds, so in dev mode it is handy to save it as a file
 and use that file as input to parse.clj
 this is all handled in extract.clj
