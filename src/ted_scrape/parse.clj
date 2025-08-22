@@ -1,5 +1,7 @@
 (ns ted-scrape.parse
   (:require [cheshire.core :as json]
+            [clojure.edn :as edn]
+            [clojure.java.io :as io]
             [clojure.string :as str]
             [hickory.select :as hs]
             [ted-scrape.utils :refer [decode-html]]))
@@ -110,18 +112,50 @@
         (map clean-sentence-fragment)
         (fragments->paragraph))))
 
-(defn parse-ted-talk [hickory-tree]
-  (let [title-speaker (parse-title-speaker hickory-tree)
-        description (parse-description hickory-tree)
-        transcript-grandparent-nodes (collect-matching-grandparent-nodes hickory-tree button-with-play-icons?)
-        transcript-paragraphs (mapv node->paragraph transcript-grandparent-nodes)
-        valid-transcript-paragraphs (filterv #(seq (:content %)) transcript-paragraphs)]
-    {:title (:title title-speaker)
-     :speaker (:speaker title-speaker)
-     :description description
-     :transcript valid-transcript-paragraphs}))
+(defn parse-ted-talk [input]
+  (try
+    (cond
+      ;; If input is a string, assume it's a path to an EDN file
+      (string? input)
+      (let [hickory-tree (edn/read-string (slurp (io/file input)))]
+        (parse-ted-talk hickory-tree)) ;; recursive call with parsed tree
+
+      ;; If input is already a Hickory tree (map), proceed as usual
+      (map? input)
+      (let [title-speaker (parse-title-speaker input)
+            description (parse-description input)
+            transcript-grandparent-nodes (collect-matching-grandparent-nodes input button-with-play-icons?)
+            transcript-paragraphs (mapv node->paragraph transcript-grandparent-nodes)
+            valid-transcript-paragraphs (filterv #(seq (:content %)) transcript-paragraphs)]
+        {:ok? true
+         :result {:title       (:title title-speaker)
+                  :speaker     (:speaker title-speaker)
+                  :description description
+                  :transcript  valid-transcript-paragraphs}})
+
+      :else
+      {:ok? false
+       :error (str "Unsupported input type: " (type input))})
+
+    (catch Exception e
+      {:ok? false
+       :error (.getMessage e)})))
+
+(defn parse->file [input output-file]
+  (let [parse-result (parse-ted-talk input)]
+    (if (not (:ok? parse-result))
+      parse-result
+      (do
+        (spit output-file (:result parse-result))
+        {:ok? true :result true}))))
+
+
 
 (comment
+  (parse-ted-talk "data/sample-page.edn")
+  (p)
+  (parse-ted-talk 12)
+  (parse->file "data/sample-page.edn" "data/sample-ted-talk.edn")
   nil)
 
 
