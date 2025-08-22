@@ -7,7 +7,7 @@
 
 (defn scrape-html
   "Posts a target URL and selector to the scrape-api and returns the HTML result.
-   Returns {:ok? true :result <html>} on success,
+   Returns {:ok? true :value <html>} on success,
            {:ok? false :error <message>} on failure."
   [url]
   (try
@@ -21,7 +21,7 @@
                                :as      :json})
           html     (get-in response [:body :html])]
       (if html
-        {:ok? true :result html}
+        {:ok? true :value html}
         {:ok? false :error "Unexpected response"}))
     (catch Exception e
       {:ok? false :error (.getMessage e)})))
@@ -50,25 +50,25 @@
 
 (defn scrape->hickory
   "Scrapes HTML from the scrape-api and parses it into decoded Hickory tree.
-   Returns {:ok? true :result <parsed tree>} on success,
+   Returns {:ok? true :value <parsed tree>} on success,
            {:ok? false :error <message>} on failure."
   [url]
   (let [scrape-result (scrape-html url)]
     (if-not (:ok? scrape-result)
       scrape-result
       (try
-        (let [html (:result scrape-result)
+        (let [html (:value scrape-result)
               parsed (->> html
                           (extract-tree)
                           (decode-text-nodes))]
-          {:ok? true :result parsed})
+          {:ok? true :value parsed})
         (catch Exception e
           {:ok? false :error (.getMessage e)})))))
 
 (defn scrape->file [url output-file]
   "dev function to save web page to edn file in hickory format"
   (->> (scrape->hickory url)
-      (:result)
+      (:value)
       (spit output-file)))
 
 (comment

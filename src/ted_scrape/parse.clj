@@ -128,10 +128,10 @@
             transcript-paragraphs (mapv node->paragraph transcript-grandparent-nodes)
             valid-transcript-paragraphs (filterv #(seq (:content %)) transcript-paragraphs)]
         {:ok? true
-         :result {:title       (:title title-speaker)
-                  :speaker     (:speaker title-speaker)
-                  :description description
-                  :transcript  valid-transcript-paragraphs}})
+         :value {:title       (:title title-speaker)
+                 :speaker     (:speaker title-speaker)
+                 :description description
+                 :transcript  valid-transcript-paragraphs}})
 
       :else
       {:ok? false
@@ -146,8 +146,8 @@
     (if-not (:ok? parse-result)
       parse-result
       (do
-        (spit output-file (:result parse-result))
-        {:ok? true :result true}))))
+        (spit output-file (:value parse-result))
+        {:ok? true :value true}))))
 
 
 

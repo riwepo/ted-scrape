@@ -97,7 +97,7 @@
                             doc
                             (:transcript ted-talk))]
       {:ok?    true
-       :result {:title title :doc final-doc}})
+       :value {:title title :doc final-doc}})
     (catch Exception e
       {:ok?   false
        :error (.getMessage e)})))
@@ -112,12 +112,12 @@
     (let [write-result (write-ted-talk input)]
       (if-not (:ok? write-result)
         write-result
-        (let [slug-title (slugify (get-in write-result [:result :title]))
-              doc (get-in write-result [:result :doc])
+        (let [slug-title (slugify (get-in write-result [:value :title]))
+              doc (get-in write-result [:value :doc])
               file (io/file folder (str slug-title ".odt"))
               path (.getPath file)]
           (.save doc path)
-          {:ok? true :result path})))
+          {:ok? true :value path})))
     (catch Exception e
       {:ok?   false
        :error (.getMessage e)})))
