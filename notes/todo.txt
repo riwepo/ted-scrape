@@ -9,3 +9,5 @@ save in file as well
 
 allow parser to accept file name or full html
 
+pass the web service and selector in as config somehow
+
