@@ -9,9 +9,10 @@
   "Posts a target URL and selector to the scrape-api and returns the HTML result.
    Returns {:ok? true :result <html>} on success,
            {:ok? false :error <message>} on failure."
-  [url selector]
+  [url]
   (try
     (let [endpoint "http://localhost:3001/scrape"
+          selector "button > div > i:first-of-type"
           payload  {:url url :selector selector}
           headers  {"Content-Type" "application/json"}
           response (http/post endpoint
@@ -51,8 +52,8 @@
   "Scrapes HTML from the scrape-api and parses it into decoded Hickory tree.
    Returns {:ok? true :result <parsed tree>} on success,
            {:ok? false :error <message>} on failure."
-  [url selector]
-  (let [scrape-result (scrape-html url selector)]
+  [url]
+  (let [scrape-result (scrape-html url)]
     (if-not (:ok? scrape-result)
       scrape-result
       (try
@@ -64,19 +65,17 @@
         (catch Exception e
           {:ok? false :error (.getMessage e)})))))
 
-(defn scrape->file [url selector output-file]
+(defn scrape->file [url output-file]
   "dev function to save web page to edn file in hickory format"
-  (->> (scrape->hickory url selector)
+  (->> (scrape->hickory url)
       (:result)
       (spit output-file)))
 
 (comment
   (scrape->hickory
-    "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript"
-    "button > div > i:first-of-type")
+    "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript")
   (scrape->file
     "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript"
-    "button > div > i:first-of-type"
     "data/sample-page.edn")
   nil)
 
