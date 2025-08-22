@@ -24,7 +24,7 @@
       {:status 1 :error "url not reachable"})
     (let [{:keys [exit out] :as result} (scrape-html-with-puppeteer-script url)]
       (println "scrape-html-with-puppeteer-script returned exit status " exit)
-      (if (not (= 0 exit))
+      (if-not (= 0 exit)
         result
         (let [hickory-tree (html->hickory out)
               ted-talk (parse-ted-talk hickory-tree)
