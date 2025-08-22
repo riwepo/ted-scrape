@@ -1,5 +1,6 @@
 (ns ted-scrape.odt-writer
   (:require [clojure.edn :as edn]
+            [clojure.java.io :as io]
             [clojure.string :as str])
   (:import [org.odftoolkit.odfdom.doc OdfTextDocument]
            [org.odftoolkit.odfdom.dom.element.style
@@ -72,32 +73,57 @@
     (.appendChild (.getContentRoot doc) para)
     doc))
 
-(defn write-ted-talk [ted-talk]
-  (let [doc (-> (OdfTextDocument/newTextDocument)
-                (modify-paragraph-style paragraph-style)
-                (write-heading (:h1 heading-formats) (str "TED Talk: " (:title ted-talk)))
-                (write-para paragraph-style "")
-                (write-heading (:h3 heading-formats) (str "Speaker: " (:speaker ted-talk)))
-                (write-para paragraph-style "")
-                (write-heading (:h3 heading-formats) "Introduction")
-                (write-para paragraph-style (:description ted-talk))
-                (write-para paragraph-style "")
-                (write-heading (:h3 heading-formats) "Transcript"))]
-    (reduce (fn [d para]
-              (write-para d paragraph-style (str (:timestamp para) "\n" (:content para)))
-              (write-para d paragraph-style ""))
-            doc
-            (:transcript ted-talk))))
+(defn write-ted-talk [input]
+  (try
+    (let [ted-talk (cond
+                     (string? input) (edn/read-string (slurp (io/file input)))
+                     (map? input) input
+                     :else (throw (ex-info "Unsupported input type" {:type (type input)})))
+          title (:title ted-talk)
+          doc (-> (OdfTextDocument/newTextDocument)
+                  (modify-paragraph-style paragraph-style)
+                  (write-heading (:h1 heading-formats) (str "TED Talk: " title))
+                  (write-para paragraph-style "")
+                  (write-heading (:h3 heading-formats) (str "Speaker: " (:speaker ted-talk)))
+                  (write-para paragraph-style "")
+                  (write-heading (:h3 heading-formats) "Introduction")
+                  (write-para paragraph-style (:description ted-talk))
+                  (write-para paragraph-style "")
+                  (write-heading (:h3 heading-formats) "Transcript"))
+          final-doc (reduce (fn [d para]
+                              (-> d
+                                  (write-para paragraph-style (str (:timestamp para) "\n" (:content para)))
+                                  (write-para paragraph-style "")))
+                            doc
+                            (:transcript ted-talk))]
+      {:ok?    true
+       :result {:title title :doc final-doc}})
+    (catch Exception e
+      {:ok?   false
+       :error (.getMessage e)})))
 
-(defn richo []
-  (let [raw-str (slurp "data/ted-talk.edn")
-        ted-talk (edn/read-string raw-str)
-        title (str/replace (:title ted-talk) #" " "-")
-        doc (write-ted-talk ted-talk)]
-    (.save doc (str "data/" title ".odt"))))
+(defn slugify [s]
+  (-> s
+      str/lower-case
+      (str/replace #" " "_")))
+
+(defn save-ted-talk [input folder]
+  (try
+    (let [write-result (write-ted-talk input)]
+      (if-not (:ok? write-result)
+        write-result
+        (let [slug-title (slugify (get-in write-result [:result :title]))
+              doc (get-in write-result [:result :doc])
+              file (io/file folder (str slug-title ".odt"))
+              path (.getPath file)]
+          (.save doc path)
+          {:ok? true :result path})))
+    (catch Exception e
+      {:ok?   false
+       :error (.getMessage e)})))
 
 (comment
-  (richo)
+  (save-ted-talk "data/sample-ted-talk.edn" "data")
   (nop))
 
 
