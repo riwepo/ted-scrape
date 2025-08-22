@@ -143,7 +143,7 @@
 
 (defn parse->file [input output-file]
   (let [parse-result (parse-ted-talk input)]
-    (if (not (:ok? parse-result))
+    (if-not (:ok? parse-result)
       parse-result
       (do
         (spit output-file (:result parse-result))
