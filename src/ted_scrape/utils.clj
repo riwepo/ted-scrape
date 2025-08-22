@@ -30,7 +30,11 @@
          (.isDirectory f)
          (.canWrite f))))
 
-
+(defn bind [result f]
+  "helper function for monadic chaining"
+  (if (:ok? result)
+    (f (:value result))
+    result))
 
 
 
