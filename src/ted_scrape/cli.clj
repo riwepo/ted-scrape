@@ -1,10 +1,22 @@
 (ns ted-scrape.cli
   (:require [clojure.string :as str]
             [clojure.tools.cli :refer [parse-opts]]
-            [ted-scrape.utils :refer [valid-ted-transcript-url? valid-output-dir?]]
-            [ted-scrape.core :refer [run]])
-  (:gen-class))
+            [ted-scrape.core :refer [process-ted-talk]])
+  (:gen-class)
+  (:import (java.io File)))
 
+(defn valid-ted-transcript-url? [url]
+  (let [pattern #"^https://www\.ted\.com/talks/([a-z0-9_\-]+)/transcript$"
+        match (re-matches pattern url)]
+    (boolean match)))
+
+(defn valid-output-dir?
+  "Returns true if the path exists, is a directory, and is writable."
+  [^String path]
+  (let [f (File. path)]
+    (and (.exists f)
+         (.isDirectory f)
+         (.canWrite f))))
 
 (def cli-options
   [["-u" "--url URL" "TED transcript URL"
@@ -42,25 +54,33 @@
       (:help options)                                       ; help => exit OK with usage summary
       {:exit-message (usage summary) :ok? true}
       errors                                                ; errors => exit with description of errors
-      {:exit-message (error-msg errors)}
+      {:exit-message (error-msg errors) :ok? false}
       :else                                                 ; run the program with options
-      {:action "run" :options options})))
+      {:action "process-ted-talk" :options options})))
 
-(defn do-exit [{:keys [exit out err]}]
+(defn do-exit [{:keys [exit err]}]
   (when err
-    (println err))
-  ;(println exit))                                           ; in dev, keep repl running just print status
-  (System/exit exit))
+    (println err)
+    ;  (println exit))                                           ; in dev, keep repl running just print status
+    (System/exit exit)))
 
 (defn -main [& args]
   (let [{:keys [options exit-message ok?]} (validate-args args)]
     (if exit-message
       (do-exit {:exit (if ok? 0 1) :err exit-message})
-      (let [result (run options)]
-        (do-exit result)))))
+      (let [url (:url options)
+            output-dir (:output-dir options)
+            result (process-ted-talk output-dir url)]
+        (let [{:keys [ok? error value]} result]
+          (do-exit {:ok? ok? :out value :err error}))))))
+
 
 
 (comment
+  (-main
+    "-o" "C:/temp"
+    "-u" "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript")
+
   (-main "-u" "https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped/transcript" "-o" "C:/temp")
   nil)
 
