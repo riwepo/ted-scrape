@@ -113,6 +113,10 @@
         (fragments->paragraph))))
 
 (defn parse-ted-talk [input]
+  "parses a ted talk represented as a hickory tree
+  input can either be the tree or the path to an edn file holding the tree
+  returns an object representing a ted talk transcript
+  in the form :ok? :error :value"
   (try
     (cond
       ;; If input is a string, assume it's a path to an EDN file
