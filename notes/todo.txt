@@ -1,13 +1,11 @@
 
 
-change return object to
-ok? error result
+got it running in interactive terminal
 
-fetch html via web service
+figure out how to launch container this way from docker desktop
+currently can only do from command line
 
-save in file as well
+it is not working
 
-allow parser to accept file name or full html
-
-pass the web service and selector in as config somehow
-
+probably need to map a volume for writing the file
+also may need a port in order to access the web service
