@@ -54,6 +54,15 @@ In this version, the task is kicked off from the command line WITHIN the docker 
 Two command line arguments are url of the ted talk, and directory to store the file.
 
 
+docker notes
+docker build -t scrape-api .
+need to run in interactive mode to access the command line
+docker run -it ted-scrape
+
+
+
+
+
 
 
 
