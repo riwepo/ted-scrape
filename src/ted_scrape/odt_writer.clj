@@ -107,7 +107,7 @@
       str/lower-case
       (str/replace #" " "_")))
 
-(defn save-ted-talk [input folder]
+(defn save-ted-talk [folder input]
   (try
     (let [write-result (write-ted-talk input)]
       (if-not (:ok? write-result)
