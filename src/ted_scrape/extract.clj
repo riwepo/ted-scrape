@@ -12,8 +12,8 @@
            {:ok? false :error <message>} on failure."
   [url]
   (try
-    (let [endpoint (:scrape-api-url env)
-          selector (:scrape-api-selector env)
+    (let [endpoint (or (System/getenv "SCRAPE_API_URL") (:scrape-api-url env))
+          selector (or (System/getenv "SCRAPE_API_SELECTOR") (:scrape-api-selector env))
           payload {:url url :selector selector}
           headers {"Content-Type" "application/json"}
           response (http/post endpoint
