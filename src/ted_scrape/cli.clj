@@ -49,6 +49,7 @@
   should exit (with an error message, and optional ok status), or a map
   indicating the action the program should take and the options provided."
   [args]
+  (println "validate-args" args)
   (let [{:keys [options errors summary]} (parse-opts args cli-options)]
     (cond
       (:help options)                                       ; help => exit OK with usage summary
@@ -60,9 +61,9 @@
 
 (defn do-exit [{:keys [exit err]}]
   (when err
-    (println err)
+    (println err))
     ;  (println exit))                                           ; in dev, keep repl running just print status
-    (System/exit exit)))
+  (System/exit exit))
 
 (defn -main [& args]
   (let [{:keys [options exit-message ok?]} (validate-args args)]
@@ -71,8 +72,8 @@
       (let [url (:url options)
             output-dir (:output-dir options)
             result (process-ted-talk output-dir url)]
-        (let [{:keys [ok? error value]} result]
-          (do-exit {:ok? ok? :out value :err error}))))))
+        (let [{:keys [ok? error]} result]
+          (do-exit {:exit (if ok? 0 1) :err error}))))))
 
 
 
