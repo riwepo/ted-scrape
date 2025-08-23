@@ -3,6 +3,7 @@
     [cheshire.core :as json]
     [clj-http.client :as http]
     [hickory.core :as hickory]
+    [config.core :refer [env]]
     [ted-scrape.utils :refer [decode-html]]))
 
 (defn scrape-html
@@ -11,15 +12,16 @@
            {:ok? false :error <message>} on failure."
   [url]
   (try
-    (let [endpoint "http://localhost:3001/scrape"
-          selector "button > div > i:first-of-type"
-          payload  {:url url :selector selector}
-          headers  {"Content-Type" "application/json"}
+    (let [endpoint (:scrape-api-url env)
+          selector (:scrape-api-selector env)
+          payload {:url url :selector selector}
+          headers {"Content-Type" "application/json"}
           response (http/post endpoint
                               {:headers headers
                                :body    (json/generate-string payload)
                                :as      :json})
-          html     (get-in response [:body :html])]
+          html (get-in response [:body :html])]
+      (println payload)
       (if html
         {:ok? true :value html}
         {:ok? false :error "Unexpected response"}))
@@ -68,8 +70,8 @@
 (defn scrape->file [url output-file]
   "dev function to save web page to edn file in hickory format"
   (->> (scrape->hickory url)
-      (:value)
-      (spit output-file)))
+       (:value)
+       (spit output-file)))
 
 (comment
   (scrape->hickory

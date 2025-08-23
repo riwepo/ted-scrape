@@ -1,0 +1,3 @@
+{:scrape-api-url "http://localhost:3001/scrape"
+ :scrape-api-selector "button > div > i:first-of-type"}
+
