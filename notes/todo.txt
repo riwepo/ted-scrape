@@ -1,11 +1,6 @@
 
 
-got it running in interactive terminal
+got it all working!
 
-figure out how to launch container this way from docker desktop
-currently can only do from command line
-
-it is not working
-
-probably need to map a volume for writing the file
-also may need a port in order to access the web service
+all that remains to do is figure out how to drive it without opening the dev environment
+and hopefully without opening a terminal
