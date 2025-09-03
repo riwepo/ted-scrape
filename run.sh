@@ -1,7 +1,7 @@
 #!/bin/bash
 # This shell script is used when running the app inside a docker container.
 # The command to run the container is
-# docker run -it -v "$(pwd)/output:/app/output" ted-scrape
+# docker run -it -v "C:/Temp:/app/output" ted-scrape
 # this sets up a directory to write the odt file to
 
 # Trap Ctrl+C
