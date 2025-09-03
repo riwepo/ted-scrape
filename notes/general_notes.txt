@@ -58,7 +58,7 @@ docker notes
 docker build -t ted-scrape .
 need to run in interactive mode to access the command line
 also need to set up a directory to write to
-docker run -it -v "%cd%/output:/app/output" ted-scrape
+docker run -it -v "C:/Temp:/app/output" ted-scrape
 
 
 
