@@ -55,10 +55,12 @@ Two command line arguments are url of the ted talk, and directory to store the f
 
 
 docker notes
-docker build -t scrape-api .
+docker build -t ted-scrape .
 need to run in interactive mode to access the command line
 also need to set up a directory to write to
-docker run -it -v "$(pwd)/output:/app/output" ted-scrape
+docker run -it -v "%cd%/output:/app/output" ted-scrape
+
+
 
 
 
